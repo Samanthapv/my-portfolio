@@ -19,11 +19,6 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/index.js"
     ],
-    "/[project]": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/[project].js"
-    ],
     "/_app": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
