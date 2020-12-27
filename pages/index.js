@@ -3,15 +3,30 @@ import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 
 export default function Home() {
-  let [number, setNumber] = useState("");
+  let [message, setMessage] = useState("");
 
   useEffect(() => {
     changeFont();
   }, [])
 
-  let changeFont = () => {
+  let changeMessage = () => {
+
+    let messages = ["dog", "cat", "giraffe", "bird"]
+
+    //nothing in the beggining, set state to be the first word, appearing letter by letter
+    // when word is complete take letters from the tail of the word one by one
+    //when there's nothing jump to next word, show it 
+
     setInterval(function(){
-      setNumber(Math.floor(Math.random() * 6) + 1);  
+
+      for (let i= 0; i < messages.length; i++) {
+        let currentWord = messages[i]
+
+        
+      }
+
+
+      setMessage();  
    }, 3000);
   }
 
@@ -21,10 +36,7 @@ export default function Home() {
 
 <div className="flex h-screen justify-center items-center">
   <div className="flex flex-col">
-     <p className="fontmain "> hi! I am <span>samantha!</span> a </p>
-     <p className="fontmain"> <span className={`font${number} inline-block h-10 w-25`}> full-stack </span> <span className="mt-1"> developer </span>
-    </p>
-    <p className="fontmain"><span className="mt-1">based in Spain.</span>
+     <p className="fontmain "> hi! I am <span>samantha!</span> a full-stack developer and a <span>{message}</span> based in Spain.
     </p>
     </div>
    </div>
