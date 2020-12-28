@@ -8,6 +8,7 @@ module.exports = {
   purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+  
       boxShadow: {
         smblue: ' 5rem -20px #BFD8D2',
       },
@@ -24,6 +25,9 @@ module.exports = {
         cyan: colors.cyan,
         orange: colors.orange,
       },
+      backgroundImage: {
+        'hero-bg': "url('/background.jpg')",
+    },
     },
   },
   variants: {},

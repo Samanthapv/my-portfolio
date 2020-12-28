@@ -1,44 +1,32 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
+import Typical from 'react-typical';
+
 
 export default function Home() {
-  let [message, setMessage] = useState("");
+  
+let [message, setMessage] = useState("");
+let [typingState, setTypingState] = useState(false);
 
   useEffect(() => {
-    changeFont();
+  
   }, [])
-
-  let changeMessage = () => {
-
-    let messages = ["dog", "cat", "giraffe", "bird"]
-
-    //nothing in the beggining, set state to be the first word, appearing letter by letter
-    // when word is complete take letters from the tail of the word one by one
-    //when there's nothing jump to next word, show it 
-
-    setInterval(function(){
-
-      for (let i= 0; i < messages.length; i++) {
-        let currentWord = messages[i]
-
-        
-      }
-
-
-      setMessage();  
-   }, 3000);
-  }
 
   return (
    
    <div className="">
 
-<div className="flex h-screen justify-center items-center">
-  <div className="flex flex-col">
-     <p className="fontmain "> hi! I am <span>samantha!</span> a full-stack developer and a <span>{message}</span> based in Spain.
+  <div className="flex justify-center items-center bg-hero-bg bg-no-repeat bg-cover h-screen">
+     <p className="fontmain m-auto text-7xl text-center"> 
+     hi I am samantha,  <br /> a <span className="font-bold">full-stack developer</span> <br /> and a  {" "} <Typical
+        loop={Infinity}
+        wrapper="b"
+        steps={['language learner', 1000, 'traveller', 1000, 'knitter', 1000, 'music lover', 1000]}
+      /> <br /> based in Spain.
+
     </p>
-    </div>
+
    </div>
 
    <div className="m-72">
