@@ -9,10 +9,10 @@
     @apply font-custom1 text-6xl text-gray-800;
   }
   .font1 {
-    @apply font-custom2 text-6xl text-yellow-400;
+    @apply font-custom2 text-6xl text-gray-800;
   }
   .font2 {
-    @apply font-custom3 text-6xl text-red-300;
+    @apply font-custom3 text-6xl text-gray-800;
   }
   .font3 {
     @apply font-custom4 text-6xl text-yellow-600;
@@ -24,8 +24,26 @@
     @apply font-custom6 text-6xl text-green-600;
   }
   .font6 {
-    @apply font-custom7 text-6xl text-indigo-500;
+    @apply font-custom7 text-6xl;
   }
+    .wavy {
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: #bfb1d5;
+      
+    }
+
+    .wavy2 {
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: white;
+      
+    }
+
+    .vl {
+      border-left: 2px dotted black;
+      height: 300px;
+    }
 
 }
 
