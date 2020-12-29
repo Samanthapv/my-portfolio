@@ -9,7 +9,7 @@
     @apply font-custom1 text-6xl text-gray-800;
   }
   .font1 {
-    @apply font-custom2 text-6xl text-gray-800;
+    @apply font-custom2;
   }
   .font2 {
     @apply font-custom3 text-6xl text-gray-800;
@@ -18,7 +18,7 @@
     @apply font-custom4 text-6xl text-yellow-600;
   }
   .font4 {
-    @apply font-custom5 text-6xl text-green-100 underline;
+    @apply font-custom5 ;
   }
   .font5 {
     @apply font-custom6 text-6xl text-green-600;

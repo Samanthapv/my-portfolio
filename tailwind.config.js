@@ -20,7 +20,7 @@ module.exports = {
        },
       fontFamily: {
         custom1: ["Space Mono","monospace"],
-        custom2: ["Bungee", "cursive"],
+        custom2: ["Reenie Beanie", "cursive"],
         custom3: ["Fugaz", "cursive"],
         custom4: ["Gabriela", "serif"],
         custom5: ["Libre Baskerville", "serif"],  
@@ -42,6 +42,9 @@ module.exports = {
         },
         pink: {
           salmon: '#fed1be',
+        },
+        blue: {
+          light: '#abe1fd',
         }
       },
       
