@@ -49,9 +49,11 @@ export default function Home() {
                 1000,
                 "traveller",
                 1000,
-                "knitter",
+                "knitting pro",
                 1000,
                 "music lover",
+                1000,
+                "dog person",
                 1000,
               ]}
             />{" "}
@@ -117,7 +119,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <svg className="-mt-64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <svg className="-mt-80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#bfb1d5"
           fill-opacity="1"
@@ -128,16 +130,37 @@ export default function Home() {
   
       </div>
      
-     
-
       {/* third screen*/}
 
      <div className="h-screen">
 
-    <p className="fontmain text-6xl mt-60 text-center">about me</p>
+    <div className="flex flex-col justify-center ">
+     <div className="flex flex-row justify-center">
+     <p className="fontmain text-6xl mt-64 text-center">about me</p>
+     <img src="dashed-line.png" className="h-20 w-auto mt-64" alt="line" />
+     <img src="dashed-line.png" className="h-20 w-auto mt-64" alt="line" />
+    </div>
+    
 
-     </div>
-      
+    <div className="flex justify-center">
+    <p className="text-justify text-lg w-8/12">
+      After 7 years working in the travel and customer service industries I decided to follow my passion and turn my career towards technology. I have experience building full stack apps both on my own and in collaborative remote team environments, and my previous job experience has helped me to develop great soft skills such as  teamwork, adaptability or good communication skills.
+    </p> 
+    
+    <div className="flex flex-row justify-center"></div>
+
+    <div>
+
+  
+
+    </div>
+    </div>
+    
+    </div>
+    </div>
+ 
+    
+ 
 
     
 
