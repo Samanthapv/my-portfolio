@@ -61,6 +61,7 @@ class MyDocument extends Document {
             integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
             crossorigin="anonymous"
           />
+          <title>sam pinos</title>
         </Head>
         <body>
           <Main />

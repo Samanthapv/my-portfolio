@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="">
 
-      {/* first screen*/}
+      {/* sidebar */}
 
       <div className="fixed flex mt-12 flex-col justify-start items-center text-4xl m-auto text-gray-800">
         <div className="vl"></div>
@@ -34,6 +34,8 @@ export default function Home() {
         </div>
         <div className="vl"></div>
       </div>
+
+    {/* first screen*/}
 
       <div className="flex justify-center items-center bg-hero-bg bg-no-repeat bg-cover h-screen px-1">
         <div>
@@ -132,13 +134,13 @@ export default function Home() {
      
       {/* third screen*/}
 
-     <div className="h-screen">
+     <div className="h-screen text-gray-800">
 
     <div className="flex flex-col justify-center ">
      <div className="flex flex-row justify-center">
-     <p className="fontmain text-6xl mt-64 text-center">about me</p>
-     <img src="dashed-line.png" className="h-20 w-auto mt-64" alt="line" />
-     <img src="dashed-line.png" className="h-20 w-auto mt-64" alt="line" />
+     <p className="fontmain text-6xl mt-56 text-center">about me</p>
+     <img src="dashed-line.png" className="h-20 w-auto mt-56" alt="line" />
+     <img src="dashed-line.png" className="h-20 w-auto mt-56" alt="line" />
     </div>
     
 
@@ -146,16 +148,73 @@ export default function Home() {
     <p className="text-justify text-lg w-8/12">
       After 7 years working in the travel and customer service industries I decided to follow my passion and turn my career towards technology. I have experience building full stack apps both on my own and in collaborative remote team environments, and my previous job experience has helped me to develop great soft skills such as  teamwork, adaptability or good communication skills.
     </p> 
-    
-    <div className="flex flex-row justify-center"></div>
+    </div>
+
+    <div className="flex flex-col justify-center"></div>
+
+    <div className="flex flex-row justify-center gap-x-3 mt-6">
 
     <div>
+    <h1 className="fontmain text-4xl text-center fontmain mb-5">technical skills</h1>
 
-  
+    <div className="flex flex-row justify-center text-center">
+
+    <ul className="text-2xl font6">
+
+  <li> javascript </li>
+  <li>react.js</li>
+  <li>node.js</li>
+  <li>express</li>
+  <li>mysql</li>
+
+    </ul>
+
+    <ul className="text-2xl font6">
+
+  <li>git</li>
+  <li>mocha</li>
+  <li>chai</li>
+  <li>tailwindcss</li>
+  <li>sequelize</li>
+
+    </ul>
 
     </div>
+
     </div>
-    
+
+    <div className="vl"></div>
+
+    <div>
+    <h1 className="fontmain text-4xl text-center ">education</h1>
+    <h3>codeop</h3>
+    <h5>full stack development bootcamp</h5>
+    <p>Barcelona, 09/2020 - 11/2020 (550 hours)</p>
+
+    <h3>university of Greenwich</h3>
+    <h5>erasmus programme</h5>
+    <p>London, 2011 - 2012 </p>
+
+    <h3>universidad de Málaga</h3>
+    <h5>BA in translation and interpreting (English)</h5>
+    <p>Málaga, class of 2013</p>
+
+    </div>
+
+    <div className="vl"></div>
+
+    <div>
+    <h1 className="fontmain text-4xl text-center ">work experience</h1>
+     
+     <ul>
+     <li>senior guest specialist - booking.com (2018 - 2020)</li>
+     <li>guest specialist - booking.com (2016 - 2018)</li>
+     <li>onstar advisor - general motors (2015 - 2016) </li>
+     </ul>
+     </div>
+    </div>
+
+
     </div>
     </div>
  
