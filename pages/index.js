@@ -2,7 +2,12 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import Typical from "react-typical";
 
+
 export default function Home() {
+
+  useEffect(() => {
+    
+  }, [])
 
   return (
     <div className="">
@@ -104,8 +109,8 @@ export default function Home() {
               <p className="text-xl text-center pb-8">
               Online clothing store with Stripe payment integration. <br/>
               <div className="text-white text-center flex flex-row justify-center mt-2 mb-4">
-              <a className="text-white wavy2 hover:underline mr-2" href="/midori">see it live</a> |
-              <div className="wavy2 hover:underline ml-2"><Link  href="https://midori-shop.herokuapp.com/"> watch a demo</Link></div>
+              <a className="text-white wavy2 hover:underline mr-2" href="https://midori-shop.herokuapp.com/">see it live</a> |
+              <div className="wavy2 hover:underline ml-2"><Link  href="/midori"> watch a demo</Link></div>
               </div>
 
               <span className="bg-gray-800 text-white font4 text-base px-1">React</span>,  <span className="bg-gray-800 text-white font4 text-base px-1"> React Router </span> ,

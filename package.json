@@ -9,6 +9,7 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "@barba/core": "^2.9.7",
     "autoprefixer": "^10.0.2",
     "framer": "^1.2.11",
     "framer-motion": "^3.1.1",

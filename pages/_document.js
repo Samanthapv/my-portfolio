@@ -63,9 +63,11 @@ class MyDocument extends Document {
           />
           <title>sam pinos</title>
         </Head>
-        <body>
+        <body data-barba="wrapper">
+        <div data-barba="container">
           <Main />
           <NextScript />
+          </div>
         </body>
       </Html>
     );
