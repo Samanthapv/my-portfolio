@@ -134,7 +134,7 @@ export default function Home() {
      
       {/* third screen*/}
 
-     <div className="h-screen text-gray-800">
+     <div className="h-screen text-gray-800 bg-white">
 
     <div className="flex flex-col justify-center ">
      <div className="flex flex-row justify-center">
