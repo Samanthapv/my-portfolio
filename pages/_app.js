@@ -1,18 +1,35 @@
 import "../assets/index.css";
-import { AnimatePresence } from 'framer-motion';
+import React from 'react';
+import App from 'next/app';
+import { AnimatePresence, motion } from 'framer-motion';
 
-function MyApp({ Component, pageProps }) {
+class MyApp extends App {
+  render() {
+    const { Component, pageProps, router } = this.props;
+    const spring = {
+      type: "spring",
+      damping: 20,
+      stiffness: 100,
+      when: "afterChildren"
+    };
 
-  const { router } = this.props;
-
-  return (
-
-    <Layout>
-  <AnimatePresence exitBeforeEnter>
-  <Component {...pageProps} key={router.route}/>;
-  </AnimatePresence>
-  </Layout>
-  )
+    return (
+<AnimatePresence>
+        <div className="page-transition-wrapper" style={{backgroundColor: "white"}}>
+          <motion.div
+            transition={{spring}}
+            key={router.pathname}
+            initial={{ x: 300, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -300, opacity: 0 }}
+            id="page-transition-container"
+          >
+            <Component {...pageProps} key={router.pathname} />
+          </motion.div>
+        </div>
+      </AnimatePresence>
+    );
+  }
 }
 
 export default MyApp;
