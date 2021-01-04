@@ -14,7 +14,7 @@ export default function About() {
               <h1 class="title animate-this">
                   about page
               </h1>
-              <img src="https://picsum.photos/1200/900" />
+              <img src="https://picsum.photos/1300/1000" />
               <div class="animate-this button">
               <Link href="/">
           <a>go back to home</a>
