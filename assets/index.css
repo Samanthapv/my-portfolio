@@ -40,6 +40,39 @@
       
     }
 
+    .wavy3 {
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: #adddcf;
+      
+    }
+
+    .triangle-isosceles{
+      position: relative;
+      padding: 15px;
+      margin: 1em 0 3em;
+      color: #000;
+      background: linear-gradient(#f9d835, #f3921c);
+      border-radius: 10px;  
+    }
+ 
+ .triangle-isosceles.left{
+  background: #1F2937;
+  margin-left: 50px;
+}
+
+.triangle-isosceles.left:after{
+  top: auto;
+  right: auto;
+  bottom: 15px;
+  left: -55px;
+  
+  border-bottom: 10px solid transparent;
+  border-left: 0;
+  border-right: 55px solid #1F2937;
+  border-top: 10px solid transparent;
+}
+
     .vl {
       border-left: 2px dotted black;
       height: 300px;

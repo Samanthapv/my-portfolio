@@ -53,9 +53,9 @@ module.exports = {
       
       backgroundImage: {
         'hero-bg': "url('/background.jpg')",
-        
+        'iframe-load': "url('/loader.gif')",        
     },
-  
+
 
     },
   },

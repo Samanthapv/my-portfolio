@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import Page from "../components/page";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
