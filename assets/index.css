@@ -47,6 +47,13 @@
       
     }
 
+    .wavy4 {
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: #abe1fd;
+      
+    }
+
    .overflowy  {
       max-height:150px;
       overflow:scroll;

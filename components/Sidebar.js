@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 
 export default function sidebar() {
-  const routes = ["/midori", "shareIt"];
+  const routes = ["/midori", "/shareit"];
   const router = useRouter();
 
   return (

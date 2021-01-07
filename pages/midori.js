@@ -1,37 +1,44 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import SideBar from "../components/Sidebar";
 
+export default function midori() {
+  const [isHovered, setHovered] = useState("");
 
-export default function About() {
-
-const [isHovered, setHovered] = useState("");
-
-const container = {
+  const container = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      animate: {x: 50},
+      animate: { x: 50 },
       transition: {
-        staggerChildren: 0.5
-      }
-    }
-  }
-  
+        staggerChildren: 0.5,
+      },
+    },
+  };
+
   const item = {
     hidden: { opacity: 0 },
-    show: { opacity: 1 }
-  }
+    show: { opacity: 1 },
+  };
 
- const techUsed = ["React","React Router","Node","Express","Sequelize","MySQL","Tailwind CSS","Heroku","Multer","Axios","JWT","Bcrypt","Pusher","Google Maps API","Firebase"]
+  const techUsed = [
+    "React",
+    "React Router",
+    "Node",
+    "Express",
+    "MySQL",
+    "Bootstrap",
+    "Heroku",
+    "JWT",
+    "Bcrypt",
+  ];
 
   return (
     <div className="h-screen">
       <SideBar />
 
       <div className="header text-center flex flex-row justify-center mt-6">
-        <h1 className="title animate-this wavy3 fontmain">shareIt</h1>
+        <h1 className="title animate-this wavy3 mt-5 fontmain">midori</h1>
 
         <p className="overflowy h-32 w-6/12">
           Lorem fistrum torpedo torpedo sexuarl qué dise usteer la caidita
@@ -64,19 +71,23 @@ const container = {
             onMouseLeave={() => setHovered(false)}
           ></iframe>
 
-
-          <motion.ul variants={container} initial="hidden" animate="show" className={`ml-5 my-7 ${isHovered ? "opacity-100" : "opacity-0"}`}>
-              {techUsed.map(tech =>  <motion.li variants={item} className="bg-gray-700 border rounded text-white text-center my-2">{tech}</motion.li> )}
- 
+          <motion.ul
+            variants={container}
+            initial="hidden"
+            animate="show"
+            className={`flex flex-col items-center justify-center ml-5 ${isHovered ? "opacity-100" : "opacity-0"}`}
+          >
+            {techUsed.map((tech) => (
+              <motion.li
+                variants={item}
+                className="bg-gray-700 border rounded text-white text-center my-1"
+              >
+                {tech}
+              </motion.li>
+            ))}
           </motion.ul>
-      </div>
-
-        <div class="text-center">
-          <Link href="/">
-            <a>go back to home</a>
-          </Link>
-          <a href="index.html"></a>
         </div>
+
       </div>
     </div>
   );
