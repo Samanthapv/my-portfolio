@@ -49,7 +49,7 @@ module.exports = {
       },
 
       height: {
-        sm: '1450px'},
+        sm: '1400px'},
       
       backgroundImage: {
         'hero-bg': "url('/background.jpg')",

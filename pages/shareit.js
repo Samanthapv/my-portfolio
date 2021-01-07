@@ -81,19 +81,19 @@ export default function shareit() {
             variants={container}
             initial="hidden"
             animate="show"
-            className={`ml-5 my-8 ${isHovered ? "opacity-100" : "opacity-0"}`}
+            className={`flex flex-col items-center justify-center ml-5 ${
+              isHovered ? "opacity-100" : "opacity-0"
+            }`}
           >
             {techUsed.map((tech) => (
-              <motion.li
-                variants={item}
-                className="bg-gray-700 border rounded text-white text-center my-2"
-              >
-                {tech}
+              <motion.li variants={item}>
+                <span className="bg-gray-700 border rounded px-2 my-2 text-white text-center">
+                  {tech}
+                </span>
               </motion.li>
             ))}
           </motion.ul>
         </div>
-
       </div>
     </div>
   );
