@@ -47,35 +47,25 @@
       
     }
 
-    .triangle-isosceles{
-      position: relative;
-      padding: 15px;
-      margin: 1em 0 3em;
-      color: #000;
-      background: linear-gradient(#f9d835, #f3921c);
-      border-radius: 10px;  
+   .overflowy  {
+      max-height:150px;
+      overflow:scroll;
     }
- 
- .triangle-isosceles.left{
-  background: #1F2937;
-  margin-left: 50px;
-}
-
-.triangle-isosceles.left:after{
-  top: auto;
-  right: auto;
-  bottom: 15px;
-  left: -55px;
-  
-  border-bottom: 10px solid transparent;
-  border-left: 0;
-  border-right: 55px solid #1F2937;
-  border-top: 10px solid transparent;
-}
+    
+    ::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: rgba(0,0,0,.5);
+      -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    }
 
     .vl {
       border-left: 2px dotted black;
-      height: 300px;
+      height: 250px;
     }
 
 }

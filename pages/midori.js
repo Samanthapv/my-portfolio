@@ -3,23 +3,37 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import SideBar from "../components/Sidebar";
 
-const list = { hidden: { opacity: 0 } };
-const item = { hidden: { x: -10, opacity: 0 } };
-
-
 
 export default function About() {
 
 const [isHovered, setHovered] = useState("");
 
+const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      animate: {x: 50},
+      transition: {
+        staggerChildren: 0.5
+      }
+    }
+  }
+  
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 }
+  }
+
+ const techUsed = ["React","React Router","Node","Express","Sequelize","MySQL","Tailwind CSS","Heroku","Multer","Axios","JWT","Bcrypt","Pusher","Google Maps API","Firebase"]
+
   return (
     <div className="h-screen">
       <SideBar />
 
-      <div className="header text-center flex flex-row justify-center my-5">
+      <div className="header text-center flex flex-row justify-center mt-6">
         <h1 className="title animate-this wavy3 fontmain">shareIt</h1>
 
-        <h1 className="overflow-y-auto auto h-24 w-6/12">
+        <p className="overflowy h-32 w-6/12">
           Lorem fistrum torpedo torpedo sexuarl qué dise usteer la caidita
           mamaar está la cosa muy malar condemor por la gloria de mi madre
           torpedo. De la pradera al ataquerl hasta luego Lucas torpedo tiene
@@ -33,10 +47,10 @@ const [isHovered, setHovered] = useState("");
           muelas papaar papaar sexuarl hasta luego Lucas diodenoo. Diodeno a
           gramenawer me cago en tus muelas me cago en tus muelas amatomaa
           amatomaa qué dise usteer qué dise usteer papaar papaar.
-        </h1>
+        </p>
       </div>
       <div classname="flex flex-row ">
-        <div className="flex justify-center py-5 ">
+        <div className="flex justify-center py-2 ">
           <iframe
             className="border-8 rounded border-green-lightGreen"
             width="800"
@@ -50,15 +64,14 @@ const [isHovered, setHovered] = useState("");
             onMouseLeave={() => setHovered(false)}
           ></iframe>
 
-          <motion.ul>
-          
-            <motion.li initial={false} animate={{ x: isHovered ? 30 : 0}} className="triangle-isosceles left" className="bg-gray-700">jejejeje</motion.li>
-            <motion.li initial={false} animate={{ x: isHovered ? 70 : 0}}>jejejeje</motion.li>
-            <motion.li initial={false} animate={{ x: isHovered ? 100 : 0}}>jejejeje</motion.li>
-          </motion.ul>
-        </div>
 
-        <div class="animate-this button">
+          <motion.ul variants={container} initial="hidden" animate="show" className={`ml-5 my-7 ${isHovered ? "opacity-100" : "opacity-0"}`}>
+              {techUsed.map(tech =>  <motion.li variants={item} className="bg-gray-700 border rounded text-white text-center my-2">{tech}</motion.li> )}
+ 
+          </motion.ul>
+      </div>
+
+        <div class="text-center">
           <Link href="/">
             <a>go back to home</a>
           </Link>
