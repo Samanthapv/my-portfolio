@@ -38,7 +38,7 @@ module.exports = {
           lilac: '#bfb1d5',
         },
         green: {
-          lightGreen: '#adddcf',
+          lightGreen: '#5dc5cd',
         },
         pink: {
           salmon: '#fed1be',
@@ -52,8 +52,8 @@ module.exports = {
         sm: '1400px'},
       
       backgroundImage: {
-        'hero-bg': "url('/background.jpg')",
-        'iframe-load': "url('/loader.gif')",        
+        'hero-bg': "url('/background.gif')",
+        'hero-bg2': "url('/background2.gif')",        
     },
 
 

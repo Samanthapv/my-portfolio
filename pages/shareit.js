@@ -47,19 +47,9 @@ export default function shareit() {
         <h1 className="title animate-this wavy4 mt-5 fontmain">shareIt</h1>
 
         <p className="overflowy h-32 w-6/12">
-          Lorem fistrum torpedo torpedo sexuarl qué dise usteer la caidita
-          mamaar está la cosa muy malar condemor por la gloria de mi madre
-          torpedo. De la pradera al ataquerl hasta luego Lucas torpedo tiene
-          musho peligro por la gloria de mi madre benemeritaar. Por la gloria de
-          mi madre al ataquerl sexuarl la caidita no puedor papaar papaar no te
-          digo trigo por no llamarte Rodrigor hasta luego Lucas. Ese hombree
-          tiene musho peligro por la gloria de mi madre se calle ustée te va a
-          hasé pupitaa. Hasta luego Lucas pecador ese que llega hasta luego
-          Lucas la caidita tiene musho peligro. Por la gloria de mi madre fistro
-          ese hombree ese pedazo de por la gloria de mi madre me cago en tus
-          muelas papaar papaar sexuarl hasta luego Lucas diodenoo. Diodeno a
-          gramenawer me cago en tus muelas me cago en tus muelas amatomaa
-          amatomaa qué dise usteer qué dise usteer papaar papaar.
+        shareIt is a full-stack marketplace app that was built in three weeks, collaboratively and remotely with another developer. 
+A marketplace for lending and borrowing products from people nearby, with user 
+authentication, integration with Google Maps, PayPal, in app chat and several filter options.
         </p>
       </div>
       <div classname="flex flex-row ">

@@ -1,7 +1,15 @@
 import React from "react";
 import Link from "next/link";
+import { motion, useViewportScroll } from "framer-motion";
+
+
 
 export default function Projects() {
+
+
+  const { scrollYProgress } = useViewportScroll()
+  
+
   return (
     <div className="h-sm w-screen bg-purple-lilac">
       <h1 className="fontmain wavy2 text-center pt-16"> projects </h1>
@@ -30,11 +38,6 @@ export default function Projects() {
                 className="z-30"
               />
            
-            <img
-              src="/gif1.gif"
-              alt="shareit2"
-              className="z-10 transform rotate-12 h-80 w-100 -mt-72 pl-64"
-            />
           </div>
           </Link>
         </div>
@@ -48,15 +51,13 @@ export default function Projects() {
                 alt="midori"
               />
             </Link>
-            <img
-              src="/gif2.gif"
-              alt="midori2"
-              className="z-0 transform -rotate-12 h-80 w-100 -mt-72"
-            />
+      
           </div>
 
           <div className="text-center">
-            <p className="transform -ml-28 rotate-90 text-xl">
+            <motion.p style={{
+        opacity: scrollYProgress
+      }} className="transform -ml-28 rotate-90 text-xl">
               full-stack app, online shop <br />{" "}
               <a
                 className="text-white wavy2 hover:underline mr-2 "
@@ -65,7 +66,7 @@ export default function Projects() {
               >
                 see it live
               </a>
-            </p>{" "}
+            </motion.p>{" "}
           </div>
         </div>
 

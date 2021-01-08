@@ -3,9 +3,9 @@ import Typical from "react-typical";
 
 export default function Introduction() {
     return (
-        <div className="flex justify-center items-center bg-hero-bg bg-no-repeat bg-cover h-screen px-1">
+        <div className="flex justify-center items-center bg-hero-bg bg-no-repeat bg-cover h-screen w-screen px-1">
         <div>
-          <p className="fontmain extra-loose m-auto text-7xl text-center specialunderline bg-highlightsize bg-highlightposition">
+          <p className="fontmain extra-loose m-auto text-7xl text-center text-grey-800 specialunderline bg-highlightsize bg-highlightposition">
             hi I am <span className="wavy">samantha</span>,a <br />{" "}
             <span className=" font-bold">full-stack developer</span> <br /> and
             a{" "}
