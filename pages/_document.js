@@ -1,6 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
-
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -9,7 +8,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html style={{overflow: "-moz-scrollbars-vertical"}}>
+      <Html style={{ overflow: "-moz-scrollbars-vertical" }}>
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
@@ -54,7 +53,10 @@ class MyDocument extends Document {
           />
 
           <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap"
+            rel="stylesheet"
+          />
 
           <link
             rel="stylesheet"
@@ -62,12 +64,16 @@ class MyDocument extends Document {
             integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
             crossorigin="anonymous"
           />
+
+<link rel="preconnect" href="https://fonts.gstatic.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet"/>
+
           <title>sam pinos</title>
         </Head>
         <body data-barba="wrapper">
-        <div data-barba="container">
-          <Main />
-          <NextScript />
+          <div data-barba="container">
+            <Main />
+            <NextScript />
           </div>
         </body>
       </Html>

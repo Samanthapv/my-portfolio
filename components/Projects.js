@@ -1,23 +1,31 @@
 import React from "react";
 import Link from "next/link";
-import { motion, useViewportScroll } from "framer-motion";
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 
 
 
 export default function Projects() {
 
 
-  const { scrollYProgress } = useViewportScroll()
-  
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
 
   return (
     <div className="h-sm w-screen bg-purple-lilac">
-      <h1 className="fontmain wavy2 text-center pt-16"> projects </h1>
+      <h1 className="fontmain wavy2 text-center pt-20"> projects </h1>
 
+     
       <div className="flex flex-col items-center text-5xl mt-16 mb-5 ">
-        <div className="flex flex-row mb-1 w-200  items-center ml-72">
-          <div className="text-center">
-            <p className="transform -mr-20 rotate-90 text-xl">
+
+        <div className="flex flex-row mb-1 w-200  items-center ml-72" ref={ref}>
+       { inView && <img src="squiggle.gif" alt="squiggle" className="transform rotate-45 " /> }
+          <motion.div className="text-center"  animate={{
+                x: inView ? 25 : 0,
+                
+                }}>
+            <p className="transform -mr-20 rotate-90 text-xl font4 font-bold">
               full-stack app, marketplace <br />{" "}
               <a
                 className="text-white wavy2 hover:underline mr-2 "
@@ -27,23 +35,30 @@ export default function Projects() {
                 see it live
               </a>
             </p>{" "}
-          </div>
+          </motion.div>
 
           <Link href="/shareit">
           <div className="cursor-pointer">
             
-              <img
+          <div ref={ref}>
+              <motion.img
+               animate={{
+                x: inView ? 25 : 0,
+              }}
                 src="/shareitpic.png"
                 alt="shareit"
                 className="z-30"
               />
-           
+            </div>
           </div>
           </Link>
         </div>
 
-        <div className="flex flex-row justify-center mr-80 -mt-20 items-center h-screen">
-          <div className="mr-12">
+        <div className="flex flex-row justify-center mr-80 ml-20 -mt-20 items-center h-screen" ref={ref}>
+          <motion.div className="mr-12" animate={{
+                x: inView ? -25 : 0,
+                //rotate: inView ? -10 : 0
+                }}>
             <Link href="/midori">
               <img
                 className="cursor-pointer"
@@ -52,12 +67,13 @@ export default function Projects() {
               />
             </Link>
       
-          </div>
+          </motion.div>
 
-          <div className="text-center">
-            <motion.p style={{
-        opacity: scrollYProgress
-      }} className="transform -ml-28 rotate-90 text-xl">
+          <motion.div className="text-center"  animate={{
+                x: inView ? -25 : 0,
+                //rotate: inView ? -5 : 0
+                }}>
+            <p className="transform -ml-28 rotate-90 text-xl">
               full-stack app, online shop <br />{" "}
               <a
                 className="text-white wavy2 hover:underline mr-2 "
@@ -66,8 +82,9 @@ export default function Projects() {
               >
                 see it live
               </a>
-            </motion.p>{" "}
-          </div>
+            </p>
+          </motion.div>
+          {inView && <img src="/sparkles.gif" alt="sparkles" className="w-3/12"/>}
         </div>
 
       </div>

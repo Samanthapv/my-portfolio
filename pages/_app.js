@@ -1,6 +1,7 @@
 import "../assets/index.css";
 import React from 'react';
 import App from 'next/app';
+import Head from 'next/head';
 import { AnimatePresence, motion } from 'framer-motion';
 
 class MyApp extends App {
@@ -9,11 +10,12 @@ class MyApp extends App {
     const spring = {
       type: "spring",
       damping: 20,
-      stiffness: 100,
+      stiffness: 80,
       when: "afterChildren"
     };
 
     return (
+
 <AnimatePresence>
         <div className="page-transition-wrapper" style={{backgroundColor: "white"}}>
     

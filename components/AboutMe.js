@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from './Modal'
+
+
 
 export default function AboutMe() {
+
+  const [isOpen, setIsOpen] = useState(false)
+
+  let handleOpenModal = () => {
+
+    !isOpen ? document.body.classList.add('modal-open') : document.body.classList.remove('modal-open');
+    setIsOpen(!isOpen)
+  }
+  
   return (
     <div className="h-screen text-gray-800 bg-white">
       <svg
@@ -15,6 +27,11 @@ export default function AboutMe() {
         ></path>
       </svg>
 
+      <Modal 
+          isOpen={isOpen}
+          onRequestClose={handleOpenModal}
+        />
+
       <div className="flex flex-col justify-center ">
         <div className="flex flex-row justify-center">
           <p className="fontmain text-6xl text-center">
@@ -24,14 +41,18 @@ export default function AboutMe() {
           <img src="dashed-line.png" className="h-20 w-auto" alt="line" />
         </div>
 
-        <div className="flex justify-center">
-          <p className="text-justify text-lg w-8/12 mb-5">
+        <div className="flex justify-center font4 ">
+          <p className="text-justify text-lg w-9/12 ">
             After 7 years working in the travel and customer service industries
             I decided to follow my passion and turn my career towards
-            technology. I have experience building full stack apps both on my
+            technology. I enjoy building functional and aesthetic products and 
+            consider myself a creative and resorceful person who really enjoys
+             creating, working in a team and solving problems. I strive to make the web a beautiful place🖤. <br />
+            I have experience building full stack apps both on my
             own and in collaborative remote team environments, and my previous
             job experience has helped me to develop great soft skills such as
-            teamwork, adaptability or good communication skills.
+            teamwork, adaptability or good communication skills. <br />
+           
           </p>
         </div>
 
@@ -39,7 +60,7 @@ export default function AboutMe() {
 
         <div className="flex flex-row justify-center gap-x-3 mt-6">
           <div>
-            <h1 className="fontmain text-4xl text-center fontmain mb-5">
+            <h1 className="fontmain text-3xl text-center fontmain mb-5">
               technical skills
             </h1>
 
@@ -53,56 +74,55 @@ export default function AboutMe() {
               </ul>
 
               <ul className="text-2xl font6">
-                <li>git</li>
-                <li>mocha</li>
-                <li>chai</li>
+              <li>git</li>
+                <li>next.js</li>
+                <li>mocha / chai</li>
                 <li>tailwindcss</li>
                 <li>sequelize</li>
               </ul>
             </div>
           </div>
 
-          <div className="vl"></div>
+          <div className="vl2"></div>
 
-          <div>
-            <h1 className="fontmain text-4xl text-center ">education</h1>
-            <h3 className="mt-5 text-xl">codeop</h3>
+          <div className="font4 text-center"> 
+            <h1 className="fontmain text-3xl text-center ">education</h1>
+            <h3><span className="font-black text-2xl text-green-lightGreen">*</span> <span onClick={handleOpenModal} className="italic underline text-lg  hover:text-green-lightGreen cursor-pointer">codeop</span></h3>
             <h5>full stack development bootcamp</h5>
             <p>Barcelona, 09/2020 - 11/2020 (550 hours)</p>
 
-            <h3>university of Greenwich</h3>
-            <h5>erasmus programme</h5>
-            <p>London, 2011 - 2012 </p>
-
-            <h3>universidad de Málaga</h3>
-            <h5>BA in translation and interpreting (English)</h5>
-            <p>Málaga, class of 2013</p>
+            <h3><span className="font-black text-2xl text-green-lightGreen">*</span> <span className="italic text-lg">university of greenwich</span></h3>
+            <h5>erasmus programme (2011 - 2012)</h5>
+ 
+            <h3><span className="font-black text-2xl text-green-lightGreen">*</span> <span className="italic text-lg">universidad de málaga, class of 2013</span></h3>
+            <h5>BA in translation and interpreting (english)</h5>
+        
           </div>
 
-          <div className="vl"></div>
+          <div className="vl2"></div>
 
           <div className="mb-10">
-            <h1 className="fontmain text-4xl text-center ">work experience</h1>
+            <h1 className="fontmain text-3xl text-center mb-4">recent work experience</h1>
 
-            <ul>
-              <li>senior guest specialist - booking.com (2018 - 2020)</li>
-              <li>guest specialist - booking.com (2016 - 2018)</li>
-              <li>onstar advisor - general motors (2015 - 2016) </li>
+            <ul className="font4 text-lg text-center">
+              <li><span className="font-black text-2xl text-green-lightGreen">*</span> <span className="italic">senior guest specialist</span> (booking.com)</li>
+              <li className="mb-2">barcelona, spain (2018 - 2020)</li>
+              <li><span className="font-black text-2xl text-green-lightGreen">*</span> <span className="italic">guest specialist </span> (booking.com) </li>
+              <li className="mb-2"> barcelona, spain (2016 - 2018)</li>
+              <li><span className="font-black text-2xl text-green-lightGreen">*</span> <span className="italic">onstar advisor </span> (vauxhall motors) </li> 
+              <li>luton, uk (2015 - 2016) </li>
             </ul>
        
           </div>
        
+      </div>
+
+      <img className="mt-3" src="/yellowwave.png" />
+
         </div>
 
-     
-      </div>
-      <svg className="-mt-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#f0e0a2"
-            fill-opacity="1"
-            d="M0,192L26.7,202.7C53.3,213,107,235,160,229.3C213.3,224,267,192,320,165.3C373.3,139,427,117,480,122.7C533.3,128,587,160,640,165.3C693.3,171,747,149,800,128C853.3,107,907,85,960,106.7C1013.3,128,1067,192,1120,197.3C1173.3,203,1227,149,1280,133.3C1333.3,117,1387,139,1413,149.3L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
-          ></path>
-        </svg>
+
+      
     </div>
   );
 }
