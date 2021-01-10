@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 
 
 
-export default function Projects() {
+export default function Projects(props) {
 
 
   const { ref, inView } = useInView({
@@ -14,7 +14,7 @@ export default function Projects() {
 
   return (
     <div className="h-sm w-screen bg-purple-lilac">
-      <h1 className="fontmain wavy2 text-center pt-20"> projects </h1>
+      <h1 className="fontmain wavy2 text-center pt-20"> {props.language == 'EN' ? "projects"  : props.language == "ES" ? "proyectos" : "portugués"}  </h1>
 
      
       <div className="flex flex-col items-center text-5xl mt-16 mb-5 ">
@@ -26,18 +26,18 @@ export default function Projects() {
                 
                 }}>
             <p className="transform -mr-20 rotate-90 text-xl font4 font-bold">
-              full-stack app, marketplace <br />{" "}
+            {props.language == 'EN' ? "full-stack app, marketplace"  : props.language == "ES" ? "app full-stack, marketplace" : "portugués"}  <br />{" "}
               <a
                 className="text-white wavy2 hover:underline mr-2 "
                 href="https://shareitapp.herokuapp.com/"
                 target="_blank"
               >
-                see it live
+               {props.language == 'EN' ? "see it live"  : props.language == "ES" ? "visítala" : "portugués"}
               </a>
             </p>{" "}
           </motion.div>
 
-          <Link href="/shareit">
+          <Link href={`/shareit?${props.language}`}>
           <div className="cursor-pointer">
             
           <div ref={ref}>
@@ -59,7 +59,7 @@ export default function Projects() {
                 x: inView ? -25 : 0,
                 //rotate: inView ? -10 : 0
                 }}>
-            <Link href="/midori">
+            <Link href={`/midori?${props.language}`}>
               <img
                 className="cursor-pointer"
                 src="/midoripic.png"
@@ -74,13 +74,13 @@ export default function Projects() {
                 //rotate: inView ? -5 : 0
                 }}>
             <p className="transform -ml-28 rotate-90 text-xl">
-              full-stack app, online shop <br />{" "}
+            {props.language == 'EN' ? "full-stack app, online shop"  : props.language == "ES" ? "app full-stack, tienda online" : "portugués"} <br />{" "}
               <a
                 className="text-white wavy2 hover:underline mr-2 "
                 href="https://midori-shop.herokuapp.com/"
                 target="_blank"
               >
-                see it live
+                 {props.language == 'EN' ? "see it live"  : props.language == "ES" ? "visítala" : "portugués"}
               </a>
             </p>
           </motion.div>

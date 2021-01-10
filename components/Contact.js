@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import SplitText from './SplitText'
+import ScrollToTop from "./ScrollToTop";
 
 export default function Contact() {
 
@@ -13,10 +14,10 @@ export default function Contact() {
  
      
     return (
-        <div className="flex justify-center items-center h-screen bg-hero-bg2 mt-64 text-center fontmain">
+        <div className="flex flex-col justify-center items-center h-screen bg-hero-bg2 ">
    <div ref={ref}>
   
-      <h1>
+      <h1 className=" text-center fontmain">
         <AnimatePresence>
           {inView && (
             <motion.div
@@ -47,6 +48,9 @@ export default function Contact() {
 
     </div>
 
+<div>
+    <ScrollToTop />
+    </div>
         </div>
     )
 }

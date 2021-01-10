@@ -8,58 +8,59 @@ module.exports = {
   purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-
       spacing: {
-        specialunderline: '4rem',
+        specialunderline: "4rem",
       },
-        boxShadow: {
-        smblue: ' 5rem -20px #BFD8D2',
+      boxShadow: {
+        smblue: " 5rem -20px #BFD8D2",
       },
       lineHeight: {
-        'extra-loose': '6rem',
-       },
+        "extra-loose": "6rem",
+      },
       fontFamily: {
-        custom1: ["Space Mono","monospace"],
+        custom1: ["Space Mono", "monospace"],
         custom2: ["Reenie Beanie", "cursive"],
         custom3: ["Fugaz", "cursive"],
         custom4: ["Gabriela", "serif"],
-        custom5: ["Nunito", "sans serif"],  
+        custom5: ["Nunito", "sans serif"],
         custom6: ["Cambay", "sans"],
-        custom7: ["Zilla Slab Highlight", "cursive"]
-       
+        custom7: ["Zilla Slab Highlight", "cursive"],
       },
       colors: {
         cyan: colors.cyan,
         orange: colors.orange,
         yellow: {
-          lightYellow: '#f0e0a2',
+          lightYellow: "#f0e0a2",
         },
         purple: {
-          lilac: '#bfb1d5',
+          lilac: "#bfb1d5",
         },
         green: {
-          lightGreen: '#5dc5cd',
+          lightGreen: "#5dc5cd",
         },
         pink: {
-          salmon: '#fed1be',
+          salmon: "#fed1be",
         },
         blue: {
-          light: '#abe1fd',
+          light: "#abe1fd",
+        },
+        yellow: {
+          extralight: "#fefdfc"
         }
       },
 
       height: {
-        sm: '1250px'},
-      
+        sm: "1250px",
+        xs: "1000px",
+      },
+
       backgroundImage: {
-        'hero-bg': "url('/background.gif')",
-        'hero-bg2': "url('/background2.gif')",        
-    },
-
-
+        "hero-bg": "url('/background.gif')",
+        "hero-bg2": "url('/background2.gif')",
+        "hero-bg3": "url('/background3.png')",
+      },
     },
   },
   variants: {},
   plugins: [],
 };
-

@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import Modal from './Modal'
 
+let EnglishDescription = "After 7 years working in the travel and customer service industries I decided to follow my passion and turn my career towards technology. I enjoy building functional and aesthetic products and consider myself a creative and resorceful person who really enjoys creating, working in a team and solving problems. I strive to make the web a beautiful place🖤. I have experience building full stack apps both on my own and in collaborative remote team environments, and my previous job experience has helped me to develop great soft skills such as teamwork, adaptability or good communication skills. ";
+let SpanishDescription = "Después de 7 años trabajando en puestos relacionados con la Atención al Cliente y los viajes he decidido por fin dar el salto y dedicarme a mi auténtica pasión, la tecnología. Me gusta programar apps funcionales y estéticas y me considero una persona creativa y resolutiva a la que le encanta crear, trabajar en equipo y resolver problemas. Tengo experiencia desarrollando apps full stack tanto individualmente como en colaboración con otros desarrolladores de manera remota, y mi anterior experiencia laboral me ha ayudado mucho a mejorar mis soft skills, por ejemplo trabajar en equipo o mis habilidades de comunicación y de adaptación.";
+let PortugueseDescription = ".";
 
 
-export default function AboutMe() {
+
+export default function AboutMe(props) {
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -14,28 +18,21 @@ export default function AboutMe() {
   }
   
   return (
-    <div className="h-screen text-gray-800 bg-white">
-      <svg
-        className="-mb-10"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
-        <path
-          fill="#bfb1d5"
-          fill-opacity="1"
-          d="M0,128L26.7,154.7C53.3,181,107,235,160,240C213.3,245,267,203,320,165.3C373.3,128,427,96,480,112C533.3,128,587,192,640,213.3C693.3,235,747,213,800,181.3C853.3,149,907,107,960,106.7C1013.3,107,1067,149,1120,181.3C1173.3,213,1227,235,1280,218.7C1333.3,203,1387,149,1413,122.7L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
-        ></path>
-      </svg>
+    <div className="h-screen w-screen bg-yellow-extralight text-gray-800 pt-4">
+
+<svg className="-mt-10 -mb-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#bfb1d5" fill-opacity="1" d="M0,32L40,64C80,96,160,160,240,170.7C320,181,400,139,480,106.7C560,75,640,53,720,69.3C800,85,880,139,960,138.7C1040,139,1120,85,1200,58.7C1280,32,1360,32,1400,32L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
 
       <Modal 
           isOpen={isOpen}
           onRequestClose={handleOpenModal}
         />
 
-      <div className="flex flex-col justify-center ">
+      <div className="flex flex-col justify-center">
         <div className="flex flex-row justify-center">
           <p className="fontmain text-6xl text-center">
-            <span className="text-yellow-lightYellow -mt-10 mb-10">*</span>about me
+            <span className="text-yellow-200 -mt-54 mb-10">*</span>
+            {props.language == 'EN' ? "about me" : props.language == "ES" ? "sobre mí" : "portuguese"} 
+           
           </p>
           <img src="dashed-line.png" className="h-20 w-auto" alt="line" />
           <img src="dashed-line.png" className="h-20 w-auto" alt="line" />
@@ -43,15 +40,8 @@ export default function AboutMe() {
 
         <div className="flex justify-center font4 ">
           <p className="text-justify text-lg w-9/12 ">
-            After 7 years working in the travel and customer service industries
-            I decided to follow my passion and turn my career towards
-            technology. I enjoy building functional and aesthetic products and 
-            consider myself a creative and resorceful person who really enjoys
-             creating, working in a team and solving problems. I strive to make the web a beautiful place🖤. <br />
-            I have experience building full stack apps both on my
-            own and in collaborative remote team environments, and my previous
-            job experience has helped me to develop great soft skills such as
-            teamwork, adaptability or good communication skills. <br />
+          {props.language == 'EN' ? EnglishDescription : props.language == "ES" ? SpanishDescription : PortugueseDescription} 
+            <br />
            
           </p>
         </div>
@@ -61,7 +51,7 @@ export default function AboutMe() {
         <div className="flex flex-row justify-center gap-x-3 mt-6">
           <div>
             <h1 className="fontmain text-3xl text-center fontmain mb-5">
-              technical skills
+            {props.language == 'EN' ? "technical skills" : props.language == "ES" ? "habilidades técnicas" : "portugues"}
             </h1>
 
             <div className="flex flex-row justify-center text-center">
@@ -86,7 +76,7 @@ export default function AboutMe() {
           <div className="vl2"></div>
 
           <div className="font4 text-center"> 
-            <h1 className="fontmain text-3xl text-center ">education</h1>
+            <h1 className="fontmain text-3xl text-center ">{props.language == 'EN' ? "education" : props.language == "ES" ? "educación" : "portugues"}</h1>
             <h3><span className="font-black text-2xl text-green-lightGreen">*</span> <span onClick={handleOpenModal} className="italic underline text-lg  hover:text-green-lightGreen cursor-pointer">codeop</span></h3>
             <h5>full stack development bootcamp</h5>
             <p>Barcelona, 09/2020 - 11/2020 (550 hours)</p>
@@ -102,7 +92,7 @@ export default function AboutMe() {
           <div className="vl2"></div>
 
           <div className="mb-10">
-            <h1 className="fontmain text-3xl text-center mb-4">recent work experience</h1>
+            <h1 className="fontmain text-3xl text-center mb-4">{props.language == 'EN' ? "recent work experience" : props.language == "ES" ? "experiencia reciente" : "portugues"}</h1>
 
             <ul className="font4 text-lg text-center">
               <li><span className="font-black text-2xl text-green-lightGreen">*</span> <span className="italic">senior guest specialist</span> (booking.com)</li>
@@ -117,11 +107,9 @@ export default function AboutMe() {
        
       </div>
 
-      <img className="mt-3" src="/yellowwave.png" />
-
         </div>
 
-
+    <div className="h-48 w-screen text-white">.</div>
       
     </div>
   );
