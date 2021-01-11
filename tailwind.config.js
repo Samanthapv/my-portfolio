@@ -33,7 +33,7 @@ module.exports = {
           lightYellow: "#f0e0a2",
         },
         purple: {
-          lilac: "#bfb1d5",
+          lilac: "#beafd3",
         },
         green: {
           lightGreen: "#5dc5cd",

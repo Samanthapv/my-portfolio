@@ -10,25 +10,19 @@ import {useRouter} from 'next/router'
 
 export default function Home() {
 
-  const router2 = useRouter()
-  const [language, setLanguage] = useState("EN");
-  
-  
-useEffect(() => {
+  const router = useRouter()
+  const [language, setLanguage] = useState(router.query.language);
 
- setLanguage(router2.query.lg)
+  useEffect(() => {
+    // Always do navigations after the first render
+    router.push(`/?language=${language}`, undefined, { shallow: true })
+  }, [language])
 
-}, [])
+  useEffect(() => {
+    // The counter changed!
+    console.log(router.query)
+  }, [router.query.language])
 
-useEffect(() => {
-
-  Router.push({
-    pathname: '/',
-    query: {lg : language},
-})
-
-
-}, [language])
 
   return (
     <div>
