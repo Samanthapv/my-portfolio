@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Modal from './Modal'
 
-let EnglishDescription = "After 7 years working in the travel and customer service industries I decided to follow my passion and turn my career towards technology. I enjoy building functional and aesthetic products and consider myself a creative and resorceful person who really enjoys creating, working in a team and solving problems. I strive to make the web a beautiful place🖤. I have experience building full stack apps both on my own and in collaborative remote team environments, and my previous job experience has helped me to develop great soft skills such as teamwork, adaptability or good communication skills. ";
-let SpanishDescription = "Después de 7 años trabajando en puestos relacionados con la Atención al Cliente y los viajes he decidido por fin dar el salto y dedicarme a mi auténtica pasión, la tecnología. Me gusta programar apps funcionales y estéticas y me considero una persona creativa y resolutiva a la que le encanta crear, trabajar en equipo y resolver problemas. Tengo experiencia desarrollando apps full stack tanto individualmente como en colaboración con otros desarrolladores de manera remota, y mi anterior experiencia laboral me ha ayudado mucho a mejorar mis soft skills, por ejemplo trabajar en equipo o mis habilidades de comunicación y de adaptación.";
-let PortugueseDescription = ".";
+let description = "After 7 years working in the travel and customer service industries I decided to follow my passion and turn my career towards technology. I enjoy building functional and aesthetic products and consider myself a creative and resorceful person who really enjoys creating, working in a team and solving problems. I strive to make the web a beautiful place🖤. I have experience building full stack apps both on my own and in collaborative remote team environments, and my previous job experience has helped me to develop great soft skills such as teamwork, adaptability or good communication skills. ";
+
 
 
 
@@ -31,8 +30,8 @@ export default function AboutMe(props) {
         <div className="flex flex-row justify-center">
           <p className="fontmain text-6xl text-center">
             <span className="text-yellow-200 -mt-54 mb-10">*</span>
-            {props.language == 'EN' ? "about me" : props.language == "ES" ? "sobre mí" : "portuguese"} 
-           
+            about me
+         
           </p>
           <img src="dashed-line.png" className="h-20 w-auto" alt="line" />
           <img src="dashed-line.png" className="h-20 w-auto" alt="line" />
@@ -40,8 +39,7 @@ export default function AboutMe(props) {
 
         <div className="flex justify-center font4 ">
           <p className="text-justify text-lg w-9/12 ">
-          {props.language == 'EN' ? EnglishDescription : props.language == "ES" ? SpanishDescription : PortugueseDescription} 
-            <br />
+          {description} <br />
            
           </p>
         </div>

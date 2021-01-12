@@ -52,10 +52,10 @@ A marketplace for lending and borrowing products from people nearby, with user
 authentication, integration with Google Maps, PayPal, in app chat and several filter options.
         </p>
       </div>
-      <div classname="flex flex-row ">
-        <div className="flex justify-center py-2 ">
+      <div classname="flex flex-row  ">
+        <div className="flex md:flex-col xl:flex-row justify-center py-2 ">
           <iframe
-            className="border-8 rounded border-blue-light"
+            className="border-8 md:mx-6 rounded border-blue-light"
             width="800"
             height="600"
             src="https://www.loom.com/embed/38a9322267054843adb08ec95c7e5e87"

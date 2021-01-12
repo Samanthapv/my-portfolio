@@ -58,6 +58,7 @@ module.exports = {
         "hero-bg": "url('/background.gif')",
         "hero-bg2": "url('/background2.gif')",
         "hero-bg3": "url('/background3.png')",
+        "hero-bg4": "url('/squared.png')",
       },
     },
   },

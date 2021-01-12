@@ -10,15 +10,15 @@ export default function TypeWriter(props) {
   }, [count]);
 
   return (
-    <div className="fontmain text-center text-7xl">
+    <div className="fontmain md:text-5xl text-center xl:text-7xl">
       <p className=" extra-loose m-auto text-grey-800 specialunderline bg-highlightsize bg-highlightposition">
         hi I am <span className="wavy">samantha</span> a <br />
         <span className="font-black"> full stack developer</span>{" "}
       </p>
 
-      <div className=" fontmain text-7xl flex flex-row justify-center font-5xl gap-5">
+      <div className=" fontmain xl:text-7xl flex flex-row justify-center md:text-5xl gap-5">
         <p> and a </p>
-        <p className="fontmain font-black text-7xl">
+        <p className="fontmain font-black xl:text-7xl md:text-5xl">
           {count ? (
             <Typist avgTypingDelay={100} onTypingDone={() => setCount(0)}>
               <span>
@@ -39,7 +39,7 @@ export default function TypeWriter(props) {
         </p>
       </div>
 
-      <p className="fontmain text-7xl"> based in Spain </p>
+      <p className="fontmain xl:text-7xl md:text-5xl"> based in Spain </p>
     </div>
   );
 }

@@ -13,77 +13,70 @@ export default function Projects(props) {
   });
 
   return (
-    <div className="h-sm w-screen bg-purple-lilac">
-      <h1 className="fontmain wavy2 text-center pt-20"> {props.language == 'EN' ? "projects"  : props.language == "ES" ? "proyectos" : "portugués"}  </h1>
+    <div className="xl:h-sm md:h-screen w-screen bg-hero-bg4 bg-no-repeat bg-purple-lilac">
+      <h1 className="fontmain wavy2 text-center pt-20"> projects </h1>
 
      
       <div className="flex flex-col items-center text-5xl mt-16 mb-5 ">
 
         <div className="flex flex-row mb-1 w-200  items-center ml-72" ref={ref}>
-       { inView && <img src="squiggle.gif" alt="squiggle" className="transform rotate-45 " /> }
-          <motion.div className="text-center"  animate={{
-                x: inView ? 25 : 0,
-                
-                }}>
-            <p className="transform -mr-20 rotate-90 text-xl font4 font-bold">
-            {props.language == 'EN' ? "full-stack app, marketplace"  : props.language == "ES" ? "app full-stack, marketplace" : "portugués"}  <br />{" "}
+          <div className="text-center"  >
+            <p className="transform -mr-20 md:mr-18 rotate-90 text-xl font4 font-bold">
+            full-stack app, marketplace  <br />
               <a
                 className="text-white wavy2 hover:underline mr-2 "
                 href="https://shareitapp.herokuapp.com/"
                 target="_blank"
               >
-               {props.language == 'EN' ? "see it live"  : props.language == "ES" ? "visítala" : "portugués"}
+               see it live
               </a>
             </p>{" "}
-          </motion.div>
+          </div>
 
           <Link href={`/shareit?${props.language}`}>
           <div className="cursor-pointer">
             
-          <div ref={ref}>
-              <motion.img
+          <div ref={ref} className="md:mr-20">
+               <motion.img
                animate={{
-                x: inView ? 25 : 0,
-              }}
-                src="/shareitpic.png"
+                y: inView ? 100 : 0,
+              }} 
+              src="/shareitpic.png"
                 alt="shareit"
-                className="z-30"
-              />
+                className="z-30" />
+              
             </div>
           </div>
           </Link>
         </div>
 
         <div className="flex flex-row justify-center mr-80 ml-20 -mt-20 items-center h-screen" ref={ref}>
-          <motion.div className="mr-12" animate={{
-                x: inView ? -25 : 0,
-                //rotate: inView ? -10 : 0
-                }}>
+          <div className="mr-12 cursor-pointer">
             <Link href={`/midori?${props.language}`}>
-              <img
-                className="cursor-pointer"
-                src="/midoripic.png"
+           <motion.img
+               animate={{
+                y: inView ? -100 : 0,
+                
+              }}
+              src="/midoripic.png"
                 alt="midori"
-              />
+                className="z-30 mb-20" />
             </Link>
       
-          </motion.div>
+          </div>
 
-          <motion.div className="text-center"  animate={{
-                x: inView ? -25 : 0,
-                //rotate: inView ? -5 : 0
-                }}>
+          <div className="text-center"> 
             <p className="transform -ml-28 rotate-90 text-xl">
-            {props.language == 'EN' ? "full-stack app, online shop"  : props.language == "ES" ? "app full-stack, tienda online" : "portugués"} <br />{" "}
+            full-stack app, online shop <br />
               <a
                 className="text-white wavy2 hover:underline mr-2 "
                 href="https://midori-shop.herokuapp.com/"
                 target="_blank"
               >
-                 {props.language == 'EN' ? "see it live"  : props.language == "ES" ? "visítala" : "portugués"}
+                see it live
               </a>
             </p>
-          </motion.div>
+          </div>
           {inView && <img src="/sparkles.gif" alt="sparkles" className="w-3/12"/>}
         </div>
 

@@ -14,7 +14,7 @@ export default function Contact() {
  
      
     return (
-        <div className="flex flex-col justify-center items-center h-screen bg-hero-bg2 ">
+        <div className="flex flex-col justify-center items-center h-screen bg-hero-bg2 bg-no-repeat">
    <div ref={ref}>
   
       <h1 className=" text-center fontmain">
@@ -37,13 +37,17 @@ export default function Contact() {
                   })
                 }}
               >
-                let's be friends!
+                let's keep in touch! 
+                argareh
               </SplitText>
+            
             </motion.div>
+           
           )}
         </AnimatePresence>
       </h1>
 
+      
 
 
     </div>
