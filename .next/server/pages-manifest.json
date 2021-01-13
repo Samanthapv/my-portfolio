@@ -2,6 +2,9 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
+<<<<<<< HEAD
   "/shareit": "pages/shareit.js",
+=======
+>>>>>>> ebf4ade054e05ac9a7bb6002df1a8d9dbc6946a3
   "/": "pages/index.js"
 }
