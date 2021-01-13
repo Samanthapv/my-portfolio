@@ -51,6 +51,7 @@ module.exports = {
 
       height: {
         sm: "1250px",
+        lg:"950px",
         xs: "1000px",
       },
 

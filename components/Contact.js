@@ -14,10 +14,10 @@ export default function Contact() {
  
      
     return (
-        <div className="flex flex-col justify-center items-center h-screen bg-hero-bg2 bg-no-repeat">
+        <div className="md:-mt-60  lg:mt-0 md:h-auto flex flex-col justify-center items-center lg:h-screen bg-hero-bg2 bg-no-repeat">
    <div ref={ref}>
   
-      <h1 className=" text-center fontmain">
+      <h1 className=" md:mt-56 md:mb-40  flex flex-col justify-center text-center fontmain ">
         <AnimatePresence>
           {inView && (
             <motion.div

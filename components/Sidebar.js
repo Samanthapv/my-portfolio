@@ -8,7 +8,7 @@ export default function sidebar() {
 
   return (
     <div
-      className={`fixed flex flex-col justify-start ml-3 items-center md:mt-44 xl:text-4xl md:text-3xl ${
+      className={`fixed flex flex-col justify-start ml-3 items-center sm:mt-5 sm:text-2xl md:mt-30 lg:mt-5 xl:text-4xl md:text-3xl ${
         routes.includes(router.pathname) ? "xl:mt-3" : "xl:mt-12"
       } text-gray-800`}
     >

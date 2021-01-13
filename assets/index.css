@@ -80,6 +80,11 @@
       height: 260px;
     }
 
+      .vl3 {
+      border-left: 2px dotted black;
+      height: 100px;
+    }
+
 }
 
 

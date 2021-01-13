@@ -46,14 +46,14 @@ export default function shareit() {
       <div className="header text-center flex flex-row  justify-center mt-6">
         <h1 className="title animate-this wavy4 mt-5 fontmain">shareIt</h1>
 
-        <p className="overflowy h-32 w-6/12">
+        <p className="overflowy h-32 w-6/12  sm:text-indigo-500 md:text-red-400 lg:text-yellow-300 xl:text-green-400">
         shareIt is a full-stack marketplace app that was built in three weeks, collaboratively and remotely with another developer. 
 A marketplace for lending and borrowing products from people nearby, with user 
 authentication, integration with Google Maps, PayPal, in app chat and several filter options.
         </p>
       </div>
       <div classname="flex flex-row  ">
-        <div className="flex md:flex-col xl:flex-row justify-center py-2 ">
+        <div className="flex xl:flex-row justify-center py-2 ">
           <iframe
             className="border-8 md:mx-6 rounded border-blue-light"
             width="800"
@@ -67,22 +67,22 @@ authentication, integration with Google Maps, PayPal, in app chat and several fi
             onMouseLeave={() => setHovered(false)}
           ></iframe>
 
-          <motion.ul
+          <motion.div
             variants={container}
             initial="hidden"
             animate="show"
-            className={`flex flex-col items-center justify-center ml-5 ${
+            className={`flex flex-col text-center items-center justify-center xl:ml-5 md:ml-2 ${
               isHovered ? "opacity-100" : "opacity-0"
             }`}
           >
             {techUsed.map((tech) => (
-              <motion.li variants={item}>
+              <motion.p variants={item}>
                 <span className="bg-gray-700 border rounded px-2 my-2 text-white text-center">
                   {tech}
                 </span>
-              </motion.li>
+              </motion.p>
             ))}
-          </motion.ul>
+          </motion.div>
         </div>
       </div>
     </div>
