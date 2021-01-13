@@ -6,7 +6,7 @@
 
 @layer components {
   .fontmain {
-    @apply font-custom1 text-6xl text-gray-800;
+    @apply font-custom6 text-6xl text-gray-800;
   }
   .font1 {
     @apply font-custom2;
@@ -54,6 +54,14 @@
       
     }
 
+      .wavy5 {
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: #5dc5cd;
+
+      
+    }
+
    .overflowy  {
       max-height:150px;
       overflow:scroll;
@@ -89,14 +97,14 @@
 
 
 .modal-base {
-  top: 50%;
+  top: 20%;
   position: relative;
   background-color: #fefefe;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 50%;
+  width: 70%;
   opacity: 0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;

@@ -74,14 +74,14 @@ export default function AboutMe(props) {
 
           <div className="font4 text-center  sm:text-sm"> 
             <h1 className="fontmain  sm:text-2xl xl:text-3xl lg:text-2xl text-center "> education</h1>
-            <h3><span className="font-black sm:text-sm xl:text-2xl lg:text-2xl text-green-lightGreen">*</span> <span onClick={handleOpenModal} className="italic underline text-lg  hover:text-green-lightGreen cursor-pointer sm:text-base">codeop</span></h3>
+            <h3><span className="font-black sm:text-sm xl:text-2xl lg:text-2xl text-green-lightGreen">*</span> <span onClick={handleOpenModal} className="italic underline xl:text-lg  hover:text-green-lightGreen cursor-pointer sm:text-base">codeop</span></h3>
             <h5>full stack development bootcamp</h5>
             <p>Barcelona, 09/2020 - 11/2020 (550 hours)</p>
 
-            <h3><span className="font-black  sm:text-sm xl:text-2xl lg:text-2xl text-green-lightGreen">*</span> <span className="italic text-lg sm:text-base">university of greenwich</span></h3>
+            <h3><span className="font-black  sm:text-sm xl:text-2xl lg:text-2xl text-green-lightGreen">*</span> <span className="italic xl:text-lg text-lg sm:text-base">university of greenwich</span></h3>
             <h5>erasmus programme (2011 - 2012)</h5>
  
-            <h3><span className="font-black  sm:text-sm xl:text-2xl lg:text-2xl text-green-lightGreen">*</span> <span className="italic text-lg sm:text-base">universidad de málaga, class of 2013</span></h3>
+            <h3><span className="font-black  sm:text-sm xl:text-2xl lg:text-2xl text-green-lightGreen">*</span> <span className="italic xl:text-lg text-lg sm:text-base">universidad de málaga, class of 2013</span></h3>
             <h5>BA in translation and interpreting (english)</h5>
         
           </div>

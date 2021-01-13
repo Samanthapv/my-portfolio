@@ -23,7 +23,7 @@ module.exports = {
         custom3: ["Fugaz", "cursive"],
         custom4: ["Gabriela", "serif"],
         custom5: ["Nunito", "sans serif"],
-        custom6: ["Cambay", "sans"],
+        custom6: ['Playfair Display', 'serif'],
         custom7: ["Zilla Slab Highlight", "cursive"],
       },
       colors: {
@@ -54,6 +54,12 @@ module.exports = {
         lg:"950px",
         xs: "1000px",
       },
+
+      lineHeight: {
+         'extra-loose': '2.5',
+         '12': '3rem',
+         '15': '6rem'
+        },
 
       backgroundImage: {
         "hero-bg": "url('/background.gif')",

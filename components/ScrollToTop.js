@@ -27,8 +27,8 @@ export default function ScrollToTop() {
   return (
     <div className="scroll-to-top">
       {isVisible && 
-        <div onClick={scrollToTop}>
-          <p>back to the top</p>
+        <div className="bottom-5 right-7 fixed ml-80 rounded-full px-3 py-2 bg-gray-800 hover:bg-yellow-200 hover:text-gray-800 text-white cursor-pointer text-2xl" onClick={scrollToTop}>
+          <p className="d"><i className="fas fa-arrow-up"></i></p>
         </div>}
     </div>
   );

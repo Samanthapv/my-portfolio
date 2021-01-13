@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import SideBar from "../components/Sidebar";
 
 export default function midori() {
-  const [isHovered, setHovered] = useState("");
-
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -31,62 +29,65 @@ export default function midori() {
     "Heroku",
     "JWT",
     "Bcrypt",
+    "Stripe API",
   ];
 
   return (
     <div className="h-screen">
       <SideBar />
+      <head>
+        <title>sam pinos</title>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
 
-      <div className="header text-center flex flex-row justify-center mt-6">
-        <h1 className="title animate-this wavy3 mt-5 fontmain">midori</h1>
+      <div className="header text-center flex flex-row  justify-center mt-6">
+        <h1 className="title animate-this wavy5 mt-5 fontmain lg:text-6xl lg:ml-20 sm:text-5xl xl:mt-5">
+          midori
+        </h1>
 
-        <p className="overflowy h-32 w-6/12">
-          Lorem fistrum torpedo torpedo sexuarl qué dise usteer la caidita
-          mamaar está la cosa muy malar condemor por la gloria de mi madre
-          torpedo. De la pradera al ataquerl hasta luego Lucas torpedo tiene
-          musho peligro por la gloria de mi madre benemeritaar. Por la gloria de
-          mi madre al ataquerl sexuarl la caidita no puedor papaar papaar no te
-          digo trigo por no llamarte Rodrigor hasta luego Lucas. Ese hombree
-          tiene musho peligro por la gloria de mi madre se calle ustée te va a
-          hasé pupitaa. Hasta luego Lucas pecador ese que llega hasta luego
-          Lucas la caidita tiene musho peligro. Por la gloria de mi madre fistro
-          ese hombree ese pedazo de por la gloria de mi madre me cago en tus
-          muelas papaar papaar sexuarl hasta luego Lucas diodenoo. Diodeno a
-          gramenawer me cago en tus muelas me cago en tus muelas amatomaa
-          amatomaa qué dise usteer qué dise usteer papaar papaar.
+        <p className="overflowy text-justify font4 h-32 w-6/12 sm:text-sm md:text-base xl:w-5/12 lg:w-5/12 text-gray-800">
+          Midori is a full-stack online shop built individually as an MVP in one
+          week. It has Stripe integration for the payments, user authentication
+          with JWT and Bcrypt and users can see their purchase history on their
+          account page. Users can search and filter the products by color or
+          category. <br/><br/> The biggest challenge while building this app was possibly
+          working with the url queries so the selected filters are shown in the
+          url and therefore users can refresh the page or send it to someone
+          else without losing their selection. Conditionally fetching data from
+          the backend depending on the filters took some thinking too, but
+          eventually a solution was found. <br/><br/> The user authentication and account
+          page were built outside of the original week, when I went back to it
+          to improve it and keep practising my skills.
         </p>
       </div>
-      <div classname="flex flex-row ">
-        <div className="flex justify-center py-2 ">
+      <div classname="flex flex-row  ">
+        <div className="flex xl:flex-row justify-center py-2 ">
           <iframe
-            className="border-8 rounded border-green-lightGreen"
-            width="800"
-            height="600"
+            className="border-8 md:mx-3 xl:ml-60 lg:ml-56 rounded border-green-lightGreen"
+            width="900"
+            height="700"
             src="https://www.loom.com/embed/38a9322267054843adb08ec95c7e5e87"
             frameborder="0"
             webkitallowfullscreen
             mozallowfullscreen
             allowfullscreen
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
           ></iframe>
 
-          <motion.ul
+          <motion.div
             variants={container}
             initial="hidden"
             animate="show"
-            className={`flex flex-col items-center justify-center ml-5 ${
-              isHovered ? "opacity-100" : "opacity-0"
-            }`}
+            className="flex flex-col text-center items-center justify-center xl:ml-5 md:mr-10 
+          "
           >
             {techUsed.map((tech) => (
-              <motion.li variants={item}>
-                <span className="bg-gray-700 border rounded px-2 my-2 text-white text-center">
+              <motion.p variants={item}>
+                <span className="bg-gray-700 border rounded font4 px-2 my-2 text-white text-center">
                   {tech}
                 </span>
-              </motion.li>
+              </motion.p>
             ))}
-          </motion.ul>
+          </motion.div>
         </div>
       </div>
     </div>

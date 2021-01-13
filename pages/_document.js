@@ -17,6 +17,9 @@ class MyDocument extends Document {
           />
 
           <link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet"></link>
+
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"
             rel="stylesheet"
@@ -68,7 +71,7 @@ class MyDocument extends Document {
 <link rel="preconnect" href="https://fonts.gstatic.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet"/>
 
-          <title>sam pinos</title>
+        
         </Head>
         <body data-barba="wrapper">
           <div data-barba="container">

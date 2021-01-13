@@ -12,7 +12,7 @@ export default function TypeWriter(props) {
   return (
     <div className="fontmain sm:text-5xl md:text-5xl lg:text-6xl text-center xl:text-7xl">
       <p className=" extra-loose m-auto text-grey-800 specialunderline bg-highlightsize bg-highlightposition">
-        hi I am <span className="wavy">samantha</span> a <br />
+        hi I'm <span className="wavy">samantha</span> a <br />
         <span className="font-black"> full stack developer</span>{" "}
       </p>
 
