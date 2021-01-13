@@ -49,8 +49,7 @@ export default function AboutMe(props) {
         <div className="flex flex-row justify-center gap-x-3 mt-6">
           <div>
             <h1 className="fontmain text-3xl text-center fontmain mb-5">
-            {props.language == 'EN' ? "technical skills" : props.language == "ES" ? "habilidades técnicas" : "portugues"}
-            </h1>
+            technical skills </h1>
 
             <div className="flex flex-row justify-center text-center">
               <ul className="text-2xl font6">
@@ -74,7 +73,7 @@ export default function AboutMe(props) {
           <div className="vl2"></div>
 
           <div className="font4 text-center"> 
-            <h1 className="fontmain text-3xl text-center ">{props.language == 'EN' ? "education" : props.language == "ES" ? "educación" : "portugues"}</h1>
+            <h1 className="fontmain text-3xl text-center "> education</h1>
             <h3><span className="font-black text-2xl text-green-lightGreen">*</span> <span onClick={handleOpenModal} className="italic underline text-lg  hover:text-green-lightGreen cursor-pointer">codeop</span></h3>
             <h5>full stack development bootcamp</h5>
             <p>Barcelona, 09/2020 - 11/2020 (550 hours)</p>
@@ -90,7 +89,7 @@ export default function AboutMe(props) {
           <div className="vl2"></div>
 
           <div className="mb-10">
-            <h1 className="fontmain text-3xl text-center mb-4">{props.language == 'EN' ? "recent work experience" : props.language == "ES" ? "experiencia reciente" : "portugues"}</h1>
+            <h1 className="fontmain text-3xl text-center mb-4"> recent work experience </h1>
 
             <ul className="font4 text-lg text-center">
               <li><span className="font-black text-2xl text-green-lightGreen">*</span> <span className="italic">senior guest specialist</span> (booking.com)</li>

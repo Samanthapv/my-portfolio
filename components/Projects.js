@@ -21,7 +21,7 @@ export default function Projects(props) {
 
         <div className="flex flex-row mb-1 w-200  items-center ml-72" ref={ref}>
           <div className="text-center"  >
-            <p className="transform -mr-20 md:mr-18 rotate-90 text-xl font4 font-bold">
+            <p className={`transform xl:-m-20 md:-mr-8 md:mr-18 rotate-90 text-xl font4 font-bold ${inView && "md:mt-48"}`}>
             full-stack app, marketplace  <br />
               <a
                 className="text-white wavy2 hover:underline mr-2 "
@@ -43,7 +43,7 @@ export default function Projects(props) {
               }} 
               src="/shareitpic.png"
                 alt="shareit"
-                className="z-30" />
+                className="z-30 xl:mb-48 xl:w-11/12" />
               
             </div>
           </div>
@@ -60,24 +60,24 @@ export default function Projects(props) {
               }}
               src="/midoripic.png"
                 alt="midori"
-                className="z-30 mb-20" />
+                className={`z-30 xl:mb-56 xl:w-11/12 ${inView && 'xl:shadow-2xl'}`} />
             </Link>
       
           </div>
 
           <div className="text-center"> 
-            <p className="transform -ml-28 rotate-90 text-xl">
-            full-stack app, online shop <br />
+              <p className={`transform -mr-64 md:-ml-60 md:mb-60 xl:mb-72 md:mr-18 rotate-90 text-xl font4 font-bold ${inView && "md:-mt-2"}`}>
+            full-stack app,  marketplace  <br />
               <a
                 className="text-white wavy2 hover:underline mr-2 "
-                href="https://midori-shop.herokuapp.com/"
+                href="https://shareitapp.herokuapp.com/"
                 target="_blank"
               >
-                see it live
+               see it live
               </a>
-            </p>
+            </p>{" "}
           </div>
-          {inView && <img src="/sparkles.gif" alt="sparkles" className="w-3/12"/>}
+          {inView && <img src="/sparkles.gif" alt="sparkles" className="xl:w-3/12  md:hidden"/>}
         </div>
 
       </div>
