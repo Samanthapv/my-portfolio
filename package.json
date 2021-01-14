@@ -1,11 +1,11 @@
 {
-  "name": "samantha portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "start": "next start",
-    "build": "next build",
+    "build": "npm run build",
     "export": "next build && next export",
     "watch:tailwind": "postcss -w src/assets/tailwind.css -o src/main.css",
     "build:tailwind": "postcss src/assets/tailwind.css -o src/main.css"
