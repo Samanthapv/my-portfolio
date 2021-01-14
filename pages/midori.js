@@ -50,26 +50,26 @@ export default function midori() {
           week. It has Stripe integration for the payments, user authentication
           with JWT and Bcrypt and users can see their purchase history on their
           account page. Users can search and filter the products by color or
-          category. <br/><br/> The biggest challenge while building this app was possibly
+          category. <br />
+          <br /> The biggest challenge while building this app was possibly
           working with the url queries so the selected filters are shown in the
           url and therefore users can refresh the page or send it to someone
-          else without losing their selection. Conditionally fetching data from
-          the backend depending on the filters took some thinking too, but
-          eventually a solution was found. <br/><br/> The user authentication and account
-          page were built outside of the original week, when I went back to it
-          to improve it and keep practising my skills.
+          else without losing their selection. Besides this, the filters also
+          took some thinking. <br />
+          <br /> The user authentication and account page were built outside of
+          the original week, when I went back to it to improve it and keep
+          practising my skills.
         </p>
       </div>
       <div classname="flex flex-row  ">
         <div className="flex xl:flex-row justify-center py-2 ">
           <iframe
             className="border-8 md:mx-3 xl:ml-60 lg:ml-56 rounded border-green-lightGreen"
-            width="900"
-            height="700"
-            src="https://www.loom.com/embed/38a9322267054843adb08ec95c7e5e87"
+            src="https://player.vimeo.com/video/500615809"
+            width="940"
+            height="620"
             frameborder="0"
-            webkitallowfullscreen
-            mozallowfullscreen
+            allow="autoplay; fullscreen; picture-in-picture"
             allowfullscreen
           ></iframe>
 

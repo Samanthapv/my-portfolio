@@ -17,22 +17,33 @@ export default function TypeWriter(props) {
       </p>
 
       <div className=" fontmain xl:text-7xl lg:text-6xl flex flex-row justify-center sm:text-5xl md:text-5xl gap-5">
-        <p> and a </p>
+        <p> and </p>
         <p className="fontmain font-black xl:text-7xl sm:text-5xl lg:text-6xl md:text-5xl">
-          {count ? (
+          {count ? (   
             <Typist avgTypingDelay={100} onTypingDone={() => setCount(0)}>
               <span>
               language learner
               </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span>  traveller </span>
+              <span> a traveller </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span> knitting pro </span>
+              <span> a knitting pro </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span>  music lover </span>
+              <span> a music lover </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span> dog person </span>
+              <span> a dog person </span>
+              <Typist.Backspace count={20} delay={1000} />
+              <span> a crafter </span>
+              <Typist.Backspace count={20} delay={1000} />
+              <span> a bookworm </span>
+              <Typist.Backspace count={20} delay={1000} />
+              <span> an optimist </span>
+              <Typist.Backspace count={20} delay={1000} />
+              <span> a coffee addict </span>
+              <Typist.Backspace count={20} delay={1000} />
+              <span> an adventurer </span>
             </Typist>
+
           ) : (
             ""
           )}

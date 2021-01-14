@@ -1,12 +1,14 @@
 {
-  "name": "learn-starter",
+  "name": "samantha portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "export": "next build && next export"
+    "build": "next build",
+    "export": "next build && next export",
+    "watch:tailwind": "postcss -w src/assets/tailwind.css -o src/main.css",
+    "build:tailwind": "postcss src/assets/tailwind.css -o src/main.css"
   },
   "dependencies": {
     "autoprefixer": "^10.0.2",
