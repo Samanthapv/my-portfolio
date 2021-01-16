@@ -39,14 +39,16 @@ export default function shareit() {
 
   return (
     <div className="h-screen">
+      
       <SideBar />
+
 
          <head>
         <title>sam pinos</title>
         <link rel="icon" href="/favicon.ico" />
       </head>
 
-      <div className="header text-center flex flex-row  justify-center mt-6">
+      <div className="header text-center flex flex-row  justify-center mt-20">
         <h1 className="title animate-this wavy4 mt-5 fontmain lg:text-6xl lg:ml-20 sm:text-5xl">
           shareIt
         </h1>

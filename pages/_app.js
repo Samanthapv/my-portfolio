@@ -36,8 +36,7 @@ updateWindowDimensions() {
       when: "afterChildren"
     };
 
-return this.state.width < 640 ? <MobileView /> :
- (
+return (
 
 <AnimatePresence>
         <div className="page-transition-wrapper" style={{backgroundColor: "white"}}>

@@ -33,15 +33,18 @@ export default function midori() {
   ];
 
   return (
-    <div className="h-screen">
+   <div className="h-screen">
+      
       <SideBar />
-      <head>
+
+
+         <head>
         <title>sam pinos</title>
         <link rel="icon" href="/favicon.ico" />
       </head>
 
-      <div className="header text-center flex flex-row  justify-center mt-6">
-        <h1 className="title animate-this wavy5 mt-5 fontmain lg:text-6xl lg:ml-20 sm:text-5xl xl:mt-5">
+      <div className="header text-center flex flex-row  justify-center mt-20">
+        <h1 className="title animate-this wavy5 mt-5 fontmain lg:text-6xl lg:ml-20 sm:text-5xl">
           midori
         </h1>
 

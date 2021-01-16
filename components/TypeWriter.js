@@ -10,38 +10,37 @@ export default function TypeWriter(props) {
   }, [count]);
 
   return (
-    <div className="fontmain sm:text-5xl md:text-5xl lg:text-6xl text-center xl:text-7xl">
-      <p className=" extra-loose m-auto text-grey-800 specialunderline bg-highlightsize bg-highlightposition">
-        hi I'm <span className="wavy">samantha</span> a <br />
+    <div className="fontmain text-4xl sm:text-5xl md:text-5xl lg:text-6xl text-center xl:text-7xl">
+      <p className=" extra-loose m-auto text-gray-800 specialunderline bg-highlightsize bg-highlightposition">
+        hi I'm <span className="wavy">samantha,</span> a <br />
         <span className="font-black"> full stack developer</span>{" "}
       </p>
 
-      <div className=" fontmain xl:text-7xl lg:text-6xl flex flex-row justify-center sm:text-5xl md:text-5xl gap-5">
-        <p> and </p>
-        <p className="fontmain font-black xl:text-7xl sm:text-5xl lg:text-6xl md:text-5xl">
+      <div className=" fontmain bg-white text-4xl xl:text-7xl lg:text-6xl flex flex-row justify-center sm:text-5xl md:text-5xl gap-5">
+        <p> and</p> <p className="fontmain font-black text-4xl xl:text-7xl sm:text-5xl lg:text-6xl md:text-5xl">
           {count ? (   
             <Typist avgTypingDelay={100} onTypingDone={() => setCount(0)}>
               <span>
-              language learner
+              a language learner
               </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span> a traveller </span>
+              <span>a traveller </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span> a knitting pro </span>
+              <span>a knitting pro </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span> a music lover </span>
+              <span>a music lover </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span> a dog person </span>
+              <span>a dog person </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span> a crafter </span>
+              <span>a crafter </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span> a bookworm </span>
+              <span>a bookworm </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span> an optimist </span>
+              <span>an optimist </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span> a coffee addict </span>
+              <span>a coffee addict </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span> an adventurer </span>
+              <span>an adventurer </span>
             </Typist>
 
           ) : (
@@ -50,7 +49,7 @@ export default function TypeWriter(props) {
         </p>
       </div>
 
-      <p className="fontmain xl:text-7xl sm:text-5xl lg:text-6xl md:text-5xl"> based in Spain </p>
+      <p className="fontmain text-4xl xl:text-7xl sm:text-5xl lg:text-6xl md:text-5xl"> based in Spain </p>
     </div>
   );
 }

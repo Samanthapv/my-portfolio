@@ -13,15 +13,16 @@ export default function Projects(props) {
   });
 
   return (
-    <div className="xl:h-sm md:h-sm sm:h-lg w-screen bg-hero-bg4 bg-no-repeat  bg-purple-lilac">
-      <h1 className="fontmain wavy2 text-center pt-20"> projects </h1>
-
+    <div className="h-lg xl:pr-56 xl:h-sm md:h-sm sm:h-lg w-screen bg-hero-bg4 bg-no-repeat  bg-purple-lilac">
+      <div className="flex flex-row justify-center w-screen">
+      <h1 className="fontmain wavy2 pt-20 text-gray-800"> projects </h1>
+      </div>
      
       <div className="flex xl:pl-60 flex-col items-center text-5xl mt-16 mb-5 ">
 
-        <div className="flex flex-row mb-1 w-200  items-center ml-72" ref={ref}>
+        <div className="flex flex-row mb-1 w-200 items-center ml-72" ref={ref}>
           <div className="text-center"  >
-            <p className="transform xl:-ml-28 xl:mb-36 md:-mr-18 md:mr-18 rotate-90 text-xl font4 font-bold">
+            <p className="transform -ml-96 mt-40 xl:mr-52 lg:-ml-96  xl:-ml-28 xl:mb-36 md:-mr-18 md:mr-18 rotate-90 text-base font4 font-bold">
             full-stack app, <br /> marketplace  <br />
               <a
                 className="text-white wavy2 hover:underline mr-2 "
@@ -34,23 +35,23 @@ export default function Projects(props) {
           </div>
 
           <Link href={`/shareit`}>
-          <div className="cursor-pointer">
+          <div className="cursor-pointer -ml-36">
             
-          <div ref={ref} className="md:mr-20">
+          <div ref={ref} className="md:mr-20 ">
                <motion.img
                animate={{
                 y: inView ? 100 : 0,
               }} 
               src="/shareitpic.png"
                 alt="shareit"
-                className={`z-30 lg:w-9/12 xl:mb-48 lg:mb-30 ${inView && 'xl:shadow-2xl'}`} />
+                className={` z-30 w-64 h-64 xl:w-96 xl:h-96 lg:h-96 lg:w-96 md:w-96 md:h-96 lg:ml-10  xl:mb-48 lg:mb-30 ${inView && 'xl:shadow-2xl'}`} />
               
             </div>
           </div>
           </Link>
         </div>
 
-        <div className="flex flex-row justify-center mr-80 ml-20 -mt-20 items-center h-screen" ref={ref}>
+        <div className="flex flex-row justify-center mr-30 ml-48  items-center h-screen" ref={ref}>
           <div className="mr-12 cursor-pointer">
             <Link href={`/midori`}>
            <motion.img
@@ -60,13 +61,13 @@ export default function Projects(props) {
               }}
               src="/midoripic.png"
                 alt="midori"
-                className={`z-30 xl:mb-56 sm:mb-30 lg:-ml-6 lg:w-9/12 ${inView && 'xl:shadow-2xl lg:shadow-2xl'}`} />
+                className={`-ml-32 lg:h-96 lg:w-96 xl:-mt-36 z-30 w-auto h-auto xl:mr-64 xl:w-96 xl:h-96 xl:mb-56 sm:mb-30 lg:mr-60 ${inView && 'xl:shadow-2xl md:shadow-2xl lg:shadow-2xl'}`} />
             </Link>
       
           </div>
 
           <div className="text-center"> 
-              <p className={`transform -mr-64 md:-ml-60 lg:mt-40 lg:-mr-12 md:mb-60 xl:-mt-44 xl:-mr- md:mr-18 sm:-ml-40 sm:mt-30 rotate-90 text-xl font4 font-bold ${inView && "md:-mt-2"}`}>
+        <p className="transform -ml-60 -mt-56 xl:-mt-72 lg:-mt-24 lg:-ml-96 xl:-ml-96 xl:mb-36 md:-mr-18 md:mr-18 rotate-90 text-base font4 font-bold">
             full-stack app, <br /> online shop  <br />
               <a
                 className="text-white wavy2 hover:underline mr-2 "
@@ -77,7 +78,7 @@ export default function Projects(props) {
               </a>
             </p>{" "}
           </div>
-          {inView && <img src="/sparkles.gif" alt="sparkles" className="xl:w-3/12 sm:hidden  xl:-mt-30  md:hidden"/>}
+         
         </div>
 
       </div>
