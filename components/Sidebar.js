@@ -23,7 +23,7 @@ export default function sidebar() {
         </div>
       )}
       <div className="bg-gray-700 h-1 w-24  xl:w-1 xl:h-36 md:w-1 md:h-36 lg:w-1 lg:h-36 sm:w-1 sm:h-36"></div>
-      <div className="text-white mb-4 bg-gray-800 rounded-full px-3 py-2 hover:bg-indigo-200 hover:text-gray-800">
+      <div className="text-white mb-4 bg-gray-800 rounded-full px-3 py-2 hover:bg-blue-light hover:text-gray-800">
         <a href="http://linkedin.com/in/samantha-pinos/" target="_blank">
           <i class="fab fa-linkedin-in"></i>
         </a>
@@ -35,7 +35,7 @@ export default function sidebar() {
         </a>
       </div>
 
-      <div className=" text-white bg-gray-800 rounded-full px-3 py-2 hover:bg-green-200 hover:text-gray-800">
+      <div className=" text-white bg-gray-800 rounded-full px-3 py-2 hover:bg-blue-600 hover:text-gray-800">
         <a href="mailto:spinosv@gmail.com">
           <i className="fa fa-envelope" aria-hidden="true"></i>
         </a>
