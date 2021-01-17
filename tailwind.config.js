@@ -53,6 +53,7 @@ module.exports = {
         sm: "1250px",
         lg:"950px",
         xs: "1000px",
+        md:"1100px",
       },
 
       lineHeight: {

@@ -24,23 +24,23 @@ export default function TypeWriter(props) {
               a language learner
               </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span>a traveller </span>
+              <span> a traveller </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span>a knitting pro </span>
+              <span> a knitting pro </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span>a music lover </span>
+              <span> a music lover </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span>a dog person </span>
+              <span> a dog person </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span>a crafter </span>
+              <span> a crafter </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span>a bookworm </span>
+              <span> a bookworm </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span>an optimist </span>
+              <span> an optimist </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span>a coffee addict </span>
+              <span> a coffee addict </span>
               <Typist.Backspace count={20} delay={1000} />
-              <span>an adventurer </span>
+              <span> an adventurer </span>
             </Typist>
 
           ) : (

@@ -22,7 +22,7 @@ export default function Projects(props) {
 
         <div className="flex flex-row mb-1 w-200 items-center ml-72" ref={ref}>
           <div className="text-center"  >
-            <p className="transform -ml-96 mt-40 xl:mr-52 lg:-ml-96  xl:-ml-28 xl:mb-36 md:-mr-18 md:mr-18 rotate-90 text-base font4 font-bold">
+            <p className="transform -ml-96 mt-40 xl:mr-36 lg:-ml-96 xl:-ml-32 xl:mb-36 md:-mr-18 md:mr-18 xl:text-xl lg:text-xl  rotate-90 text-base font4 font-bold">
             full-stack app, <br /> marketplace  <br />
               <a
                 className="text-white wavy2 hover:underline mr-2 "
@@ -51,7 +51,7 @@ export default function Projects(props) {
           </Link>
         </div>
 
-        <div className="flex flex-row justify-center mr-30 ml-48  items-center h-screen" ref={ref}>
+        <div className="flex flex-row justify-center mr-2 ml-32  items-center h-screen" ref={ref}>
           <div className="mr-12 cursor-pointer">
             <Link href={`/midori`}>
            <motion.img
@@ -61,13 +61,13 @@ export default function Projects(props) {
               }}
               src="/midoripic.png"
                 alt="midori"
-                className={`-ml-32 lg:h-96 lg:w-96 xl:-mt-36 z-30 w-auto h-auto xl:mr-64 xl:w-96 xl:h-96 xl:mb-56 sm:mb-30 lg:mr-60 ${inView && 'xl:shadow-2xl md:shadow-2xl lg:shadow-2xl'}`} />
+                className={`-ml-32 lg:h-96 lg:w-96 xl:-mt-36 xl:text-xl  z-30 w-auto h-auto xl:mr-64 xl:w-96 xl:h-96 xl:mb-56 sm:mb-30 lg:mr-60 ${inView && 'xl:shadow-2xl md:shadow-2xl lg:shadow-2xl'}`} />
             </Link>
       
           </div>
 
           <div className="text-center"> 
-        <p className="transform -ml-60 -mt-56 xl:-mt-72 lg:-mt-24 lg:-ml-96 xl:-ml-96 xl:mb-36 md:-mr-18 md:mr-18 rotate-90 text-base font4 font-bold">
+        <p className="transform -ml-60 -mt-36 xl:-mt-72 lg:-mt-24 lg:-ml-96 xl:-ml-96 xl:mb-36 md:-mr-18 md:mr-18 rotate-90 xl:text-xl lg:text-xl text-base font4 font-bold">
             full-stack app, <br /> online shop  <br />
               <a
                 className="text-white wavy2 hover:underline mr-2 "

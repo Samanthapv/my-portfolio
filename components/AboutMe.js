@@ -17,9 +17,9 @@ export default function AboutMe() {
   }
   
   return (
-    <div className="h-xs lg-h-lg md:h-lg w-screen bg-yellow-extralight text-gray-800 pt-4">
+    <div className="h-md lg-h-lg md:h-lg w-screen bg-yellow-extralight text-gray-800 pt-4">
 
-<svg className="-mt-10 -mb-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#bfb1d5" fill-opacity="1" d="M0,32L40,64C80,96,160,160,240,170.7C320,181,400,139,480,106.7C560,75,640,53,720,69.3C800,85,880,139,960,138.7C1040,139,1120,85,1200,58.7C1280,32,1360,32,1400,32L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+<svg className="-mt-5 -mb-24 xl:-mt-10 xl:-mb-24 lg:-mt-10 lg:-mb-24 md:-mt-10 md:-mb-24 sm:-mt-10 sm:-mb-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#bfb1d5" fill-opacity="1" d="M0,32L40,64C80,96,160,160,240,170.7C320,181,400,139,480,106.7C560,75,640,53,720,69.3C800,85,880,139,960,138.7C1040,139,1120,85,1200,58.7C1280,32,1360,32,1400,32L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
 
       <Modal 
           isOpen={isOpen}
