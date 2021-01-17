@@ -29,7 +29,7 @@ export default function sidebar() {
         </a>
       </div>
 
-      <div className="text-white mb-4 bg-gray-800 rounded-full px-3 py-2 hover:bg-yellow-00 hover:text-gray-800">
+      <div className="text-white mb-4 bg-gray-800 rounded-full px-3 py-2 hover:bg-yellow-200 hover:text-gray-800">
         <a href="http://github.com/Samanthapv" target="_blank">
           <i className="fab fa-github"></i>
         </a>
