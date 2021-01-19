@@ -23,7 +23,7 @@ export default function Home() {
           property="og:description"
           content="Check out my wor herek!"
         />
-        <meta property="og:image" content="https://i.imgur.com/k1skuBZ.png" />
+        <meta property="og:image" content="https://i.imgur.com/tB5E0pE.png" />
 
       </Head>
       <SideBar />
