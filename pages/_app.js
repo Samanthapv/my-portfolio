@@ -1,7 +1,6 @@
 import "../assets/index.css";
 import React from 'react';
 import App from 'next/app';
-import MobileView from "../components/MobileView";
 import { AnimatePresence, motion } from 'framer-motion';
 
 class MyApp extends App {
