@@ -21,7 +21,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary" />
         <meta
           property="og:description"
-          content="Check out my wor herek!"
+          content="Check out my work here!"
         />
         <meta property="og:image" content="https://i.imgur.com/tB5E0pE.png" />
 
