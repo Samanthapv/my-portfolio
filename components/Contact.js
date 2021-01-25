@@ -10,7 +10,7 @@ export default function Contact() {
   });
 
   return (
-    <div className="h-screen sm:h-screen md:h-screen w-screen md:-mt-60  lg:mt-0 mo flex flex-col justify-center items-center lg:h-screen bg-hero-bg2 bg-right-top  sm:bg-top-left md:bg-top-left lg:bg-top-left xl:bg-top-left  bg-no-repeat">
+    <div className="h-screen sm:h-screen md:h-screen w-screen md:-mt-60  lg:mt-0 mo flex flex-col justify-center items-center lg:h-screen bg-hero-bg2 bg-right-top  sm:bg-top-left md:bg-top-left lg:bg-top-left xl:bg-top-left bg-cover  bg-no-repeat">
       <div ref={ref}>
         <h1 className=" sm:text-gray-800 md:text-gray-800 lg:text-gray-800 xl:text-gray-800 mt-40 md:mt-40 md:mb-40 xl:mt-20 lg:mt-20 flex flex-col justify-center text-center fontmain text-4xl md:text-5xl sm:text-4xl lg:text-6xl xl:text-7xl xl:leading-15 md:leading-15 lg:leading-15">
           <AnimatePresence>
