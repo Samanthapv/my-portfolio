@@ -59,7 +59,8 @@ module.exports = {
       lineHeight: {
          'extra-loose': '2.5',
          '12': '3rem',
-         '15': '6rem'
+         '15': '6rem',
+         '17': '8rem'
         },
 
       backgroundImage: {

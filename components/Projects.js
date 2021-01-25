@@ -15,14 +15,14 @@ export default function Projects(props) {
   return (
     <div className="h-lg xl:pr-56 xl:h-sm md:h-sm sm:h-lg w-screen bg-hero-bg4 bg-no-repeat  bg-purple-lilac">
       <div className="flex flex-row justify-center w-screen">
-      <h1 className="fontmain wavy2 pt-20 text-gray-800"> projects </h1>
+      <h1 className="fontmain wavy2 pt-20 text-gray-800 2xl:text-7xl"> projects </h1>
       </div>
      
-      <div className="flex xl:pl-60 flex-col items-center text-5xl mt-16 mb-5 ">
+      <div className="flex xl:pl-60 flex-col items-center text-5xl mt-16 2xl:mt-8 mb-5 ">
 
         <div className="flex flex-row mb-1 w-200 items-center ml-72" ref={ref}>
           <div className="text-center"  >
-            <p className="transform -ml-96 mt-40 xl:mr-36 lg:-ml-96 xl:-ml-32 xl:mb-36 md:-mr-18 md:mr-18 xl:text-xl lg:text-xl  rotate-90 text-base font4 font-bold">
+            <p className="transform -ml-96 mt-40 2xl:text-2xl  xl:mr-36 lg:-ml-96 xl:-ml-32 xl:mb-36 md:-mr-18 md:mr-18 xl:text-xl lg:text-xl  rotate-90 text-base font4 font-bold">
             full-stack app, <br /> marketplace  <br />
               <a
                 className="text-white wavy2 hover:underline mr-2 "
@@ -67,7 +67,7 @@ export default function Projects(props) {
           </div>
 
           <div className="text-center"> 
-        <p className="transform -ml-60 -mt-36 xl:-mt-72 lg:-mt-24 lg:-ml-96 xl:-ml-96 xl:mb-36 md:-mr-18 md:mr-18 rotate-90 xl:text-xl lg:text-xl text-base font4 font-bold">
+        <p className="transform -ml-60 -mt-36 xl:-mt-72 lg:-mt-24 lg:-ml-96 xl:-ml-96 xl:mb-36 md:-mr-18 md:mr-18 rotate-90 xl:text-xl 2xl:text-2xl lg:text-xl text-base font4 font-bold">
             full-stack app, <br /> online shop  <br />
               <a
                 className="text-white wavy2 hover:underline mr-2 "

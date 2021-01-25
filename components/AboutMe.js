@@ -28,7 +28,7 @@ export default function AboutMe() {
 
       <div className="flex flex-col justify-center">
         <div className="flex flex-row text-center justify-center mt-20 sm:mt-20 xl:mt-10">
-          <p className="fontmain wavy  text-5xl sm:text-4xl xl:text-6xl lg:text-5xl text-center mb-5 text-gray-800 xl:mb-10">
+          <p className="fontmain wavy  text-5xl 2xl:text-7xl sm:text-4xl xl:text-6xl lg:text-5xl text-center mb-5 text-gray-800 xl:mb-10">
           
             about me
          
@@ -37,7 +37,7 @@ export default function AboutMe() {
         </div>
 
         <div className="flex justify-center font4 ">
-          <p className="text-justify text-sm sm:text-sm xl:text-lg lg:text-lg w-9/12 lg:mb-10 xl:mb-24">
+          <p className="text-justify text-sm sm:text-sm xl:text-lg 2xl:text-center 2xl:text-xl lg:text-lg w-9/12 lg:mb-10 xl:mb-24">
           {description} <br />
            
           </p>
