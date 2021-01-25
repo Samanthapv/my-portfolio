@@ -10,14 +10,14 @@ export default function TypeWriter(props) {
   }, [count]);
 
   return (
-    <div className="fontmain text-4xl sm:text-5xl md:text-5xl lg:text-6xl text-center xl:text-7xl">
+    <div className="fontmain text-4xl sm:text-5xl md:text-5xl lg:text-6xl text-center xl:text-7xl 2xl:text-8xl">
       <p className=" extra-loose m-auto text-gray-800 specialunderline bg-highlightsize bg-highlightposition">
         hi I'm <span className="wavy6">samantha,</span> a <br />
         <span className="font-black"> full stack developer</span>{" "}
       </p>
 
-      <div className=" fontmain bg-white text-4xl xl:text-7xl lg:text-6xl flex flex-row justify-center sm:text-5xl md:text-5xl gap-5">
-        <p> and</p> <p className="fontmain font-black text-4xl xl:text-7xl sm:text-5xl lg:text-6xl md:text-5xl">
+      <div className=" fontmain bg-white text-4xl xl:text-7xl 2xl:text-8xl lg:text-6xl flex flex-row justify-center sm:text-5xl md:text-5xl gap-5">
+        <p> and</p> <p className="fontmain font-black text-4xl xl:text-7xl 2xl:text-8xl sm:text-5xl lg:text-6xl md:text-5xl">
           {count ? (   
             <Typist avgTypingDelay={100} onTypingDone={() => setCount(0)}>
               <span>
@@ -49,7 +49,7 @@ export default function TypeWriter(props) {
         </p>
       </div>
 
-      <p className="fontmain text-4xl xl:text-7xl sm:text-5xl lg:text-6xl md:text-5xl"> based in Spain </p>
+      <p className="fontmain text-4xl xl:text-7xl sm:text-5xl lg:text-6xl md:text-5xl 2xl:text-8xl"> based in Spain </p>
     </div>
   );
 }

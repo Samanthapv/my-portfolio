@@ -9,11 +9,11 @@ export default function sidebar() {
   return (
     <div className="fixed z-50">
       <div 
-      className={` mt-4 flex flex-row justify-center  xl:justify-center xl:mt-24 gap-1 sm:items-center items-baseline  md:items-center sm:flex-col md:flex-col lg:flex-col xl:flex-col   xl:items-center sm:mt-20 text-xl sm:text-2xl md:mt-30 lg:mt-26 xl:text-4xl md:text-3xl ${
-        routes.includes(router.pathname) ? "xl:mt-3 -mr-20 -mt-16 ml-10 sm:ml-4 md:ml-2 xl:ml-3"  : "xl:mt-32 ml-5 sm:ml-4 md:ml-2 xl:ml-3" 
+      className={` mt-4 flex flex-row justify-center  xl:justify-center xl:mt-24 gap-1 sm:items-center items-baseline  md:items-center sm:flex-col md:flex-col lg:flex-col xl:flex-col   xl:items-center sm:mt-20 text-xl sm:text-2xl md:mt-30 lg:mt-26 xl:text-4xl md:text-3xl 2xl:text-5xl ${
+        routes.includes(router.pathname) ? "xl:mt-3 -mr-20 -mt-16 ml-10 sm:ml-4 md:ml-2 xl:ml-3"  : "2xl:mt-60 xl:mt-32 ml-5 sm:ml-4 md:ml-2 xl:ml-3" 
       } text-gray-800`}>
       {routes.includes(router.pathname) && (
-        <div className="text-white bg-gray-800 rounded-full px-3 py-2 hover:bg-pink-salmon hover:text-gray-800">
+        <div className="text-white bg-gray-800 rounded-full px-3 py-2 2xl:px-4 2xl:py-3 hover:bg-pink-salmon hover:text-gray-800">
           <Link href="/">
             <a>
               <i class="fa fa-arrow-left" aria-hidden="true"></i>
