@@ -1,8 +1,8 @@
-import React, { useState, useEffect} from "react";
+import React from "react";
 import TypeWriter from './TypeWriter'
 
 
-export default function Introduction(props) {
+export default function Introduction() {
 
 
     return (

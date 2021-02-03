@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
- 
   let toggleVisibility = () => {
     if (window.pageYOffset > 100) {
       setIsVisible(true);
@@ -12,11 +11,10 @@ export default function ScrollToTop() {
     }
   };
 
-
   let scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
@@ -26,10 +24,16 @@ export default function ScrollToTop() {
 
   return (
     <div className="scroll-to-top">
-      {isVisible && 
-        <div className="bottom-5 right-7 fixed ml-80 rounded-full px-3 py-2 bg-gray-800 hover:bg-yellow-200 hover:text-gray-800 text-white cursor-pointer text-2xl" onClick={scrollToTop}>
-          <p className="d"><i className="fas fa-arrow-up"></i></p>
-        </div>}
+      {isVisible && (
+        <div
+          className="bottom-5 right-7 fixed ml-80 rounded-full px-3 py-2 bg-gray-800 hover:bg-yellow-200 hover:text-gray-800 text-white cursor-pointer text-2xl"
+          onClick={scrollToTop}
+        >
+          <p className="d">
+            <i className="fas fa-arrow-up"></i>
+          </p>
+        </div>
+      )}
     </div>
   );
 }

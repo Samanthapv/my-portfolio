@@ -29,10 +29,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/midori": [
+    "/shareit": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/midori.js"
+      "static/chunks/pages/shareit.js"
     ]
   },
   "ampFirstPages": []

@@ -1,33 +1,9 @@
 import "../assets/index.css";
 import React from 'react';
-import App from 'next/app';
 import { AnimatePresence, motion } from 'framer-motion';
 
-class MyApp extends App {
-constructor(props) {
-  super(props);
-  this.state = { width: 0, height: 0 };
-  this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-}
-
-componentDidMount() {
-  this.updateWindowDimensions();
-  window.addEventListener('resize', this.updateWindowDimensions);
-}
-
-componentWillUnmount() {
-  window.removeEventListener('resize', this.updateWindowDimensions);
-}
-
-updateWindowDimensions() {
-  this.setState({ width: window.innerWidth, height: window.innerHeight });
-}
-
-
- render() {
-
+function MyApp({ Component, pageProps, router }) {
   
-    const { Component, pageProps, router } = this.props;
     const spring = {
       type: "inertia",
       damping: 20,
@@ -54,6 +30,5 @@ return (
       </AnimatePresence>
     );
  }
-  }
-
+  
   export default MyApp;

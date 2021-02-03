@@ -38,7 +38,7 @@ export default function Contact() {
             )}
           </AnimatePresence>
         </h1>
-    
+
         <p className="flex w-8/12 ml-24 sm:ml-0 md:ml-0 lg:ml-0 xl:ml-0  sm:w-full md:w-full lg:w-full xl:w-full justify-center flex-col text-center font4 text-gray-800 xl:-mt-36 2xl:-mt-28 lg:-mt-48 md:-mt-48 lg:text-2xl  xl:text-2xl 2xl:text-3xl md:text-xl sm:text-lg ">
           do you have any questions or would like to work together? let's talk!
           <br />
