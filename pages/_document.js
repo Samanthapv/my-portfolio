@@ -73,11 +73,11 @@ class MyDocument extends Document {
 
         
         </Head>
-        <body data-barba="wrapper">
-          <div data-barba="container">
+        <body >
+          
             <Main />
             <NextScript />
-          </div>
+          
         </body>
       </Html>
     );
