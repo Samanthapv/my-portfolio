@@ -15,9 +15,9 @@ export default function AboutMe() {
   };
 
   return (
-    <div className="h-md lg-h-lg md:h-lg w-screen bg-yellow-extralight text-gray-800 pt-4">
+    <div className="h-md lg-h-lg 2xl:h-md md:h-lg w-screen bg-yellow-extralight text-gray-800 pt-4">
       <svg
-        className="-mt-5 -mb-24 xl:-mt-10 xl:-mb-24 lg:-mt-10 lg:-mb-24 md:-mt-10 md:-mb-24 sm:-mt-10 sm:-mb-24"
+        className="-mt-5 -mb-24 xl:-mt-10 2xl:-mt-24 xl:-mb-24 lg:-mt-10 lg:-mb-24 md:-mt-10 md:-mb-24 sm:-mt-10 sm:-mb-24"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
       >
@@ -30,7 +30,7 @@ export default function AboutMe() {
 
       <Modal isOpen={isOpen} onRequestClose={handleOpenModal} />
 
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center 2xl:mb-40">
         <div className="flex flex-row text-center justify-center mt-20 sm:mt-20 xl:mt-10">
           <p className="fontmain wavy  text-5xl 2xl:text-7xl sm:text-4xl xl:text-6xl lg:text-5xl text-center mb-5 text-gray-800 xl:mb-10">
             about me
