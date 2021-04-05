@@ -15,8 +15,8 @@ export default function TypeWriter() {
         <span className="font-black"> full stack developer</span>{" "}
       </p>
 
-      <div className=" fontmain bg-white text-4xl xl:text-7xl 2xl:text-8xl lg:text-6xl flex flex-row justify-center sm:text-5xl md:text-5xl gap-5">
-        <p> and</p>{" "}
+      <div className=" fontmain bg-white text-4xl xl:text-7xl 2xl:text-8xl lg:text-6xl flex flex-row justify-center sm:text-5xl md:text-5xl ">
+        <p className="mr-5"> and</p>{" "}
         <p className="fontmain font-black text-4xl xl:text-7xl 2xl:text-8xl sm:text-5xl lg:text-6xl md:text-5xl">
           {count ? (
             <Typist avgTypingDelay={100} onTypingDone={() => setCount(0)}>

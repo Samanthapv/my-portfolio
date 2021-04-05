@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>sam pinos</title>
+        <title>samantha pinos</title>
         <link rel="icon" href="/favicon.ico" />
       <meta property="og:url" content="samanthapinos.me" />
         <meta property="og:type" content="website" />

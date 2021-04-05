@@ -32,7 +32,7 @@ export default function AboutMe() {
 
       <div className="flex flex-col justify-center 2xl:mb-40">
         <div className="flex flex-row text-center justify-center mt-20 sm:mt-20 xl:mt-10">
-          <p className="fontmain wavy  text-5xl 2xl:text-7xl sm:text-4xl xl:text-6xl lg:text-5xl text-center mb-5 text-gray-800 xl:mb-10">
+          <p className="fontmain wavy  text-5xl 2xl:text-7xl sm:text-4xl xl:text-6xl lg:text-6xl md:text-6xl text-center mb-5 text-gray-800 xl:mb-10">
             about me
           </p>
         </div>
@@ -129,6 +129,13 @@ export default function AboutMe() {
             </h1>
 
             <ul className="font4 text-sm sm:text-sm xl:text-lg lg:text-base text-center">
+                  <li>
+                <span className="font-black sm:text-sm xl:text-2xl lg:text-xl text-purple-lilac">
+                  *
+                </span>{" "}
+                <span className="italic">full-stack developer </span> (fao, united nations){" "}
+              </li>
+              <li> remote (2021 - present) </li>
               <li>
                 <span className="font-black sm:text-sm xl:text-2xl lg:text-xl text-purple-lilac">
                   *
@@ -144,14 +151,7 @@ export default function AboutMe() {
                 <span className="italic">guest specialist </span> (booking.com){" "}
               </li>
               <li className="mb-2"> barcelona, spain (2016 - 2018)</li>
-              <li>
-                <span className="font-black sm:text-sm xl:text-2xl lg:text-xl text-purple-lilac">
-                  *
-                </span>{" "}
-                <span className="italic">onstar advisor </span> (vauxhall
-                motors){" "}
-              </li>
-              <li>luton, uk (2015 - 2016) </li>
+          
             </ul>
           </div>
         </div>

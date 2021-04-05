@@ -7,8 +7,8 @@ export default function sidebar() {
   const router = useRouter();
 
   return (
-    <div className="flex flex-row 2xl:h-screen 2xl:fixed justify-center sm:justify-start 2xl:justify-start 2xl:items-center">
-    <div className="fixed z-50">
+    <div className="flex flex-row 2xl:h-screen 2xl:fixed justify-center sm:justify-start 2xl:justify-start 2xl:items-center ">
+    <div className="fixed z-50 ">
       <div
         className={` mt-4 flex flex-row justify-center 2xl:justify-center  xl:justify-center xl:mt-24 gap-1 sm:items-center items-baseline  md:items-center sm:flex-col md:flex-col lg:flex-col xl:flex-col   xl:items-center sm:mt-20 text-xl sm:text-2xl md:mt-30 lg:mt-26 xl:text-4xl md:text-3xl 2xl:text-7xl `}
       >
